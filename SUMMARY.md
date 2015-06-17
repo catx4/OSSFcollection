@@ -8,7 +8,11 @@
    * [一招半式解遍壓縮檔 - 7-Zip](APP/Apps-200812-7zip.md)
    * [把檔案抹除乾淨的 Eraser （上）](APP/Apps-200812-Eraser1.md)
    * [把檔案抹除乾淨的 Eraser （下）](APP/Apps-200812-Eraser2.md)
-   * [](APP/Apps-200904-GIMP.md)
+   * [用 GIMP 輕鬆輸出大頭照](APP/Apps-200904-GIMP.md)
+   * [淺談長文件的製作～以 Writer 為例 (1)](APP/Apps-200905-Writer1.md)
+   * [淺談長文件的製作～以 Writer 為例 (2)](APP/Apps-200905-Writer2.md)
+   * [淺談長文件的製作～以 Writer 為例 (3)](APP/Apps-200905-Writer3.md)
+   * [淺談長文件的製作～以 Writer 為例 (4)](APP/Apps-200905-Writer4.md)
 * CMS
 * DB
 * Game
