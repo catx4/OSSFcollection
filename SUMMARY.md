@@ -16,7 +16,7 @@
    * [淺談簡報設計的技巧～以 Impress 為例 (1)](APP/Apps-200909-Impress1.md)
    * [淺談簡報設計的技巧～以 Impress 為例 (2)](APP/Apps-200909-Impress2.md)
    * [淺談簡報設計的技巧～以 Impress 為例 (3)](APP/Apps-200910-Impress3.md)
-   * [Vim - 自動補齊](APP/Apps-200912-Vim.md)
+   * [Vim - 自動補齊](APP/apps-200912-vimmd.md)
    * [自由教學軟體—PhET 科學模擬程式](APP/Apps-201003-PhET.md)
    * [傳承知識的網頁平台 - Aphpkb](APP/Apps-201005-Aphpkb.md)
    * [如何將網頁上的小圖片放大成可印刷的圖片](APP/Apps-201005-pics.md)
