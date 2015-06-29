@@ -21,8 +21,8 @@
    * [傳承知識的網頁平台 - Aphpkb](APP/Apps-201005-Aphpkb.md)
    * [如何將網頁上的小圖片放大成可印刷的圖片](APP/Apps-201005-pics.md)
    * [跨平台影片播放器：Miro 3](APP/Apps-201006-Miro3.md)
-   * [Vim - 編輯緩衝區以及編輯視窗 (Buffers and Windows)](APP/Apps-201006-Vim.md) 
-   * [利用 Android 手機記錄 GPS 行程](APP/Apps-201008-GPS.md)
+   * [Vim - 編輯緩衝區以及編輯視窗 (Buffers and Windows)](APP/Apps-201006-Vim.md)
+   * [利用 Android 手機記錄 GPS 行程](APP/apps-201008-gpsmd.md)
 * CMS
 * DB
 * Game
