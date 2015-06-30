@@ -25,7 +25,7 @@
    * [利用 Android 手機記錄 GPS 行程](APP/apps-201008-gpsmd.md)
    * [一手包辦的磁碟管理工具：Parted Magic](APP/Apps-201009-PartedMagic.md)
    * [利用 Android 手機記錄行程及途經點](APP/Apps-201010-Android.md)
-   * [用自由軟體 Scribus 來輸出文件 (1)-基本操作](APP/Apps-201010-Scribus1.md)
+   * [用自由軟體 Scribus 來輸出文件 (1)-基本操作](APP/apps-201010-androidmd.md)
    * [用自由軟體 Scribus 來輸出文件 (2)-基本操作](APP/Apps-201011-Scribus2.md)
    * [用 Android 手機充當電腦的無線鍵盤及滑鼠](APP/Apps-201012-Android.md)
 * CMS
