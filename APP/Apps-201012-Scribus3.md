@@ -6,6 +6,7 @@
 ### 多邊形
 
 製作海報需要許多有變化的圖形，以下就介紹 Scribus 做出多邊形的功能。你可以看到工具列上有一個多邊形的圖樣按鈕，旁邊有一個小三角形，按下去然後點選【屬性】。
+
  [![](http://www.openfoundry.org/images/101214/ScribusPublish/scribuspublish_01.png)](http://www.openfoundry.org/images/101214/ScribusPublish/scribuspublish_01.png)  
 ▲圖1
 
