@@ -29,6 +29,9 @@
    * [用自由軟體 Scribus 來輸出文件 (2)-基本操作](APP/Apps-201011-Scribus2.md)
    * [用 Android 手機充當電腦的無線鍵盤及滑鼠](APP/Apps-201012-Android.md)
    * [用自由軟體 Scribus 來輸出文件（3）-製作活動海報及手冊](APP/Apps-201012-Scribus3.md)
+   * [以 IMSpector 側錄即時通訊軟體](Apps-201101-IMSpector.md)
+   * []()
+   * []()
 * CMS
 * DB
 * Game
