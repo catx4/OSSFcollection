@@ -31,7 +31,8 @@
    * [用自由軟體 Scribus 來輸出文件（3）-製作活動海報及手冊](APP/Apps-201012-Scribus3.md)
    * [以 IMSpector 側錄即時通訊軟體](APP/Apps-201101-IMSpector.md)
    * [用自由軟體 Scribus 來輸出文件（4）- 製作模板並轉為 PDF 輸出](APP/Apps-201101-Scribus4.md)
-   * [用自由軟體 Scribus 來輸出文件（5）- 文字應用](APP/Apps-201102-Scribus5.md)
+   * [用自由軟體 Scribus 來輸出文件（5）- 文字應用](APP/Apps-201102-Scribus5.md) 
+   * [讓 Android 手機告訴你眼前顏色的名字](APP/Apps-201104-Android.md)
 * CMS
 * DB
 * Game
