@@ -34,6 +34,7 @@
    * [用自由軟體 Scribus 來輸出文件（5）- 文字應用](APP/Apps-201102-Scribus5.md) 
    * [讓 Android 手機告訴你眼前顏色的名字](APP/Apps-201104-Android.md) 
    * [透過 Android 手機隨時隨地理財](APP/Apps-201108-Android.md)
+   * [擷圖與編修一次完成的開源軟體 Shutter](APP/Apps-201109-Shutter.md)
 * CMS
 * DB
 * Game
