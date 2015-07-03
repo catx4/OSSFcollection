@@ -1,7 +1,6 @@
 # 擷圖與編修一次完成的開源軟體 Shutter
 作者：陳筱婷，2011 年 9 月投稿。
 
-
 * 軟體名稱：Shutter
 * 版本：0.87.3
 * 官網：[http://shutter-project.org](http://shutter-project.org)
