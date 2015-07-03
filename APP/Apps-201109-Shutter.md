@@ -2,41 +2,37 @@
 作者：陳筱婷，2011 年 9 月投稿。
 
 
-軟體名稱：<span style="font-family: Times New Roman,serif;">Shutter</span>
+* 軟體名稱：Shutter
+* 版本：0.87.3
+* 官網：[http://shutter-project.org](http://shutter-project.org)
+* 系統環境：Ubuntu 10.04
 
-版本：<span style="font-family: Times New Roman,serif;">0.87.3</span>
-
-官網：[<span style="font-family: Times New Roman,serif;">http://shutter-project.org</span>](http://shutter-project.org)
-
-系統環境：<span style="font-family: Times New Roman,serif;">Ubuntu 10.04</span>
-
-<span style="font-family: Times New Roman,serif;">Shutter</span> 是在 <span style="font-family: Times New Roman,serif;">Ubuntu</span> 底下運行的開源擷圖軟體，軟體介面人性化，支援區域選取、桌面擷圖、視窗擷圖三種擷圖方式。在擷取圖片後能進行編輯，可加入文字、線條、圖案方塊與標誌，並能利用套件進行更多種編修，包含旋轉、灰階、重新定義尺寸等。圖片儲存格式支援常見的 <span style="font-family: Times New Roman,serif;">jpg</span>、<span style="font-family: Times New Roman,serif;">png</span>、<span style="font-family: Times New Roman,serif;">gif</span>，另有 <span style="font-family: Times New Roman,serif;">bmp</span>、<span style="font-family: Times New Roman,serif;">tiff</span>、<span style="font-family: Times New Roman,serif;">ani</span> 等共 <span style="font-family: Times New Roman,serif;">15</span> 種格式。軟體預設使用 <span style="font-family: Times New Roman,serif;">png</span> 格式儲存，若欲用其他格式儲存，可在偏好設定內改成符合自己使用習慣的圖片格式。
+Shutter 是在 Ubuntu底下運行的開源擷圖軟體，軟體介面人性化，支援區域選取、桌面擷圖、視窗擷圖三種擷圖方式。在擷取圖片後能進行編輯，可加入文字、線條、圖案方塊與標誌，並能利用套件進行更多種編修，包含旋轉、灰階、重新定義尺寸等。Shutter 是在 Ubuntu 底下運行的開源擷圖軟體，軟體介面人性化，支援區域選取、桌面擷圖、視窗擷圖三種擷圖方式。在擷取圖片後能進行編輯，可加入文字、線條、圖案方塊與標誌，並能利用套件進行更多種編修，包含旋轉、灰階、重新定義尺寸等。圖片儲存格式支援常見的 jpg、png、gif，另有 bmp、tiff、ani 等共 15 種格式。軟體預設使用 png 格式儲存，若欲用其他格式儲存，可在偏好設定內改成符合自己使用習慣的圖片格式。
 
 ### （一）安裝教學與軟體環境
 
-<span style="font-family: Times New Roman,serif;">Shutter</span> 這套軟體雖可透過 <span style="font-family: Times New Roman,serif;">Ubuntu</span> 內建的軟體中心安裝，但經由軟體中心所安裝的 <span style="font-family: Times New Roman,serif;">Shutter</span> 為舊版，建議由終端機安裝新版，其步驟如下：
+<Shutter 這套軟體雖可透過 Ubuntu 內建的軟體中心安裝，但經由軟體中心所安裝的 Shutter 為舊版，建議由終端機安裝新版，其步驟如下：
 
-<span style="font-family: Times New Roman,serif;">1.</span>「應用程式」→「附屬應用程式」→「終端機」，開啟終端機。
+1.「應用程式」→「附屬應用程式」→「終端機」，開啟終端機。
 
 [<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_1.png)
 
-▲ 圖<span style="font-family: Times New Roman,serif;">1</span>：開啟終端機
+▲ 圖1：開啟終端機
 
-<span style="font-family: Times New Roman,serif;">2.</span> 輸入指令 <span style="font-family: Times New Roman,serif;">sudo add-apt-repository ppa:shutter/ppa</span> 並按下 <span style="font-family: Times New Roman,serif;">Enter</span>，接著輸入使用者密碼以確認安裝。
+2.輸入指令 sudo add-apt-repository ppa:shutter/ppa 並按下 Enter，接著輸入使用者密碼以確認安裝
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_2.png)  
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_2.png)
+▲ 圖2：輸入 sudo add-apt-repository ppa:shutter/ppa 指令後準備輸入密碼
 
-▲ 圖<span style="font-family: Times New Roman,serif;">2</span>：輸入 <span style="font-family: Times New Roman,serif;">sudo add-apt-repository ppa:shutter/ppa</span> 指令後準備輸入密碼
+3.輸入指令 `sudo apt-get update` && `sudo apt-get install shutter` 並按下 Enter，由於剛剛已經輸入過密碼，這次系統會直接運行而不會再次詢問密碼。
 
-<span style="font-family: Times New Roman,serif;">3.</span> 輸入指令 <span style="font-family: Times New Roman,serif;">sudo apt-get update && sudo apt-get install shutter</span> 並按下 <span style="font-family: Times New Roman,serif;">Enter</span>，由於剛剛已經輸入過密碼，這次系統會直接運行而不會再次詢問密碼。
-
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_3.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_3.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_3.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_3.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">3</span>：<span style="font-family: Times New Roman,serif;">Shutter</span> 安裝中
 
 <span style="font-family: Times New Roman,serif;">4.</span> 安裝完成後，便可在「應用程式」→「附屬應用程式」中執行 <span style="font-family: Times New Roman,serif;">Shutter</span> 了。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_4.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_4.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_4.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_4.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">4</span>：執行 S<span style="font-family: Times New Roman,serif;">hutter</span>
 
@@ -46,11 +42,11 @@
 
 按鈕列由左至右分別為：〔<span style="font-family: Times New Roman,serif;">Redo</span>〕（重新擷取上一次執行的擷取動作，在擷取動畫或固定大小的視窗時相當實用）、〔擷取選取區域〕（可自由選取想擷取的區域大小）、〔<span style="font-family: Times New Roman,serif;">Desktop</span>〕（擷取整個螢幕畫面）、〔擷取視窗〕（只擷取單一個視窗畫面）。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_5.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_5.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_5.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_5.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">5</span><span xml:lang="zh-TW">：S</span><span style="font-family: Times New Roman,serif;">hutter</span>的環境畫面
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_6.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_6.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter1_6.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter1_6.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">6</span><span xml:lang="zh-TW">：</span>功能表列與按鈕列
 
@@ -60,11 +56,11 @@
 
 點下〔擷取選取區域〕右方的小三角形後，可選擇〔進階選取工具〕或〔簡易選取工具〕。若 選擇簡易選取工具，在按下〔擷取選取區域〕之後，影像就會立即被擷取、儲存；若使用進階選取工具，在按下〔擷取選取區域〕之後，還能再調整選取區域的大小 和位置到滿意為止，之後便不需再使用編修軟體剪裁。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_1.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_1.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">7</span><span xml:lang="zh-TW">：</span>選擇簡易選取工具或進階選取工具
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_2.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_1_2.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">8</span><span xml:lang="zh-TW">：</span>在進階模式下可調整選取範圍
 
@@ -72,17 +68,17 @@
 
 點選〔<span style="font-family: Times New Roman,serif;">Desktop</span>〕可直接擷取當前桌面影像。若在擷取影像前需要移動鼠標進行操作，可在右下角輸入欲延遲秒數，再點選〔<span style="font-family: Times New Roman,serif;">Desktop</span>〕。<span style="font-family: Times New Roman,serif;">Shutter</span> 會在設定秒數倒數結束時才擷取畫面，若沒有要進行複雜的操作，等待 <span style="font-family: Times New Roman,serif;">3</span> 至 <span style="font-family: Times New Roman,serif;">5</span> 秒便已足夠。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_1.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_1.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">9</span><span xml:lang="zh-TW">：</span>擷取桌面圖片
 
 此外，<span style="font-family: Times New Roman,serif;">Shutter</span> 也提供擷取 <span style="font-family: Times New Roman,serif;">Ubuntu</span> 其它桌面的功能。按下〔<span style="font-family: Times New Roman,serif;">Desktop</span>〕右方的小三角形，可選擇擷取其它桌面畫面，或是一次合併擷取 4 個桌面的工作畫面。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_2.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_2.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">10</span><span xml:lang="zh-TW">：</span>可選擇擷取其它桌面畫面，或是一次擷取所有桌面。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_3.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_3.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_3.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_2_3.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">11</span><span xml:lang="zh-TW">：</span>擷取所有桌面影像
 
@@ -90,7 +86,7 @@
 
 點選〔擷取視窗〕，在欲擷取畫面的視窗按下滑鼠；或點選〔擷取視窗〕右方的小三角形，選擇一個目前工作中的視窗，按下滑鼠即完成。這樣擷取下來的影像是一完整視窗而不含桌面背景，十分便利。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_3_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_3_1.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter2_3_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter2_3_1.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">12</span><span xml:lang="zh-TW">：</span>點選〔擷取視窗〕後，於欲擷取畫面的視窗按下滑鼠
 
@@ -108,11 +104,11 @@
 
 除了擷取螢幕影像外，<span style="font-family: Times New Roman,serif;">Shutter</span> 還提供了影像編輯與註記功能，特別適合撰寫圖說。點選右上方的〔<span style="font-family: Times New Roman,serif;">Edit</span>〕功能鍵，跳出另一視窗以編輯剛剛的影像。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_1.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_1.png)  
 
-▲ 圖<span style="font-family: Times New Roman,serif;">15</span><span xml:lang="zh-TW">：</span>點選〔<span style="font-family: Times New Roman,serif;">Edit</span>〕
+▲ 圖<span style="font-family: Times New Roman,serif;">15</span><span xml:lang="zh-TW">：</span>點選〔<span style="font-family: Times New Roman,serif;">Edit</span>〕  
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_2.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_2.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">16</span><span xml:lang="zh-TW">：</span><span style="font-family: Times New Roman,serif;">Shutter</span> 的編輯環境
 
@@ -178,7 +174,7 @@
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">22</span><span xml:lang="zh-TW">：</span>擷取下來的視窗畫面
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_9.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_9.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter3_9.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter3_9.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">23</span><span xml:lang="zh-TW">：</span>插入長方形與圖說
 
@@ -194,11 +190,11 @@
 
 <span style="font-family: Times New Roman,serif;">Shutter</span> 除了在影像上加上記號、文字以外，也能透過套件進行許多編修，例如調整為灰階、泛黃效果、重新定義尺寸等。點選【擷取】→【<span style="font-family: Times New Roman,serif;">Run a plugin</span>】，開啟套件模組對話視窗，並選擇想要的效果。以灰階為例，點選「灰階」，並按下「<span style="font-family: Times New Roman,serif;">Run</span>」，剛剛擷取的視窗影像便被轉為灰階。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_1.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_1.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_1.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">26</span><span xml:lang="zh-TW">：</span>【擷取】→【<span style="font-family: Times New Roman,serif;">Run a plugin</span>】
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_2.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_2.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_2.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">27</span><span xml:lang="zh-TW">：</span>選擇想要進行的編修功能
 
@@ -212,11 +208,11 @@
 
 點選「<span style="font-family: Times New Roman,serif;">polaroid</span>」功能，選擇想要加上的文字，旋轉的尺度，<span style="font-family: Times New Roman,serif;">Shutter</span> 會自動加上白框，製造出一張拍立得風格的相片。<span style="font-family: Times New Roman,serif;">Shutter</span> 可以開啟本機內的圖片進行編修，並不限於編輯擷圖下來的影像，若要開啟本機圖片，請點選【檔案】→【<span style="font-family: Times New Roman,serif;">Open</span>】，再選擇欲開啟的檔案。
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_5.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_5.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_5.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_5.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">30</span><span xml:lang="zh-TW">：</span>「<span style="font-family: Times New Roman,serif;">polaroid</span>」（拍立得）細節設定
 
-[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_6.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_6.png)
+[<span style="font-family: Times New Roman,serif;">![](http://www.openfoundry.org/images/111004/Shutter/shutter4_6.png)</span>](http://www.openfoundry.org/images/111004/Shutter/shutter4_6.png)  
 
 ▲ 圖<span style="font-family: Times New Roman,serif;">31</span><span xml:lang="zh-TW">：</span>「<span style="font-family: Times New Roman,serif;">sepia</span>」（棕色濾鏡）細節設定
 
