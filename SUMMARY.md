@@ -39,6 +39,7 @@
    * [多功能的標記語言及排版系統 - LaTeX](APP/Apps-201203-LaTeX.md)
    * [Sigil－自製電子書的開源利器](APP/Apps-201206-Sigil.md)
    * [Calibre－萬用的電子書管理軟體](APP/Apps-201207-Calibre.md)
+   * [Phatch － 跨平台的批次圖片處理軟體](APP/Apps-201208-Phatch.md)
 * CMS
 * DB
 * Game
