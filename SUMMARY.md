@@ -41,6 +41,7 @@
    * [Calibre－萬用的電子書管理軟體](APP/Apps-201207-Calibre.md)
    * [Phatch － 跨平台的批次圖片處理軟體](APP/Apps-201208-Phatch.md)
    * [Pandoc 用命令行轉換標記語言！](APP/Apps-201209-Pandoc.md)
+   * [Simile Widget Timeline - 用靜態網頁表現時間線](APP/Apps-201209-SWT.md)
 * CMS
 * DB
 * Game
