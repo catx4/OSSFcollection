@@ -38,6 +38,7 @@
    * [用 GIMP 輕鬆做出 LOMO 效果！](APP/Apps-201202-GIMP.md) 
    * [多功能的標記語言及排版系統 - LaTeX](APP/Apps-201203-LaTeX.md)
    * [Sigil－自製電子書的開源利器](APP/Apps-201206-Sigil.md)
+   * [Calibre－萬用的電子書管理軟體](APP/Apps-201207-Calibre.md)
 * CMS
 * DB
 * Game
