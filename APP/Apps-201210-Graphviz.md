@@ -131,7 +131,7 @@ Graphviz 的 ＜cmd＞ 有好幾種，每種使用方法都完全相同，差別
 6  }
 </pre>
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_04.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_04.jpg)</div>
+[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_04.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_04.jpg)
 
 ▲ 圖4：混合了空白的示範，採用 fdp 渲染。
 
@@ -159,11 +159,11 @@ Graphviz 的 ＜cmd＞ 有好幾種，每種使用方法都完全相同，差別
 16  }
 </pre>
 
-<div>
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_05.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_05.jpg)</div>
 
-</div>
+[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_05.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_05.jpg)
+
+
 
 ▲ 圖5：地中海海域連接圖，使用 fdp 渲染，種子為 8 (-Gstart=8)。
 
@@ -194,7 +194,7 @@ Graphviz 的 ＜cmd＞ 有好幾種，每種使用方法都完全相同，差別
 3  }
 </pre>
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_06.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_06.jpg)</div>
+[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_06.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_06.jpg)
 
 ▲ 圖6：大括號效果示意圖
 
@@ -293,11 +293,10 @@ Graphviz 的 ＜cmd＞ 有好幾種，每種使用方法都完全相同，差別
 32  }
 </pre>
 
-<div>
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_07.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_07.jpg)</div>
 
-</div>
+[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_07.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_07.jpg)
+
 
 ▲ 圖7：地中海海域連接圖（加入屬性）。使用 fdp 渲染，種子為 3 (-Gstart=3)。
 
@@ -323,8 +322,7 @@ dot 語言中有一個叫作 rank 的概念。
 
 請看以下的圖：
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_08.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_08.jpg)</div>
-
+<[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_08.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_08.jpg)  
 ▲ 圖8：rank 示例。
 
 很明顯可以看出來，圖片被從上到下分為四層－這就是 rank。
@@ -352,7 +350,7 @@ dot 語言中有一個叫作 rank 的概念。
 5  }
 </pre>
 
-<div>[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_09.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_09.jpg)</div>
+[![alt](http://www.openfoundry.org/images/121002/Graphviz/graphviz_09.jpg)](http://www.openfoundry.org/images/121002/Graphviz/graphviz_09.jpg)  
 
 ▲ 圖9：rank 示例。
 
