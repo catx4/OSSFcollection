@@ -37,6 +37,7 @@
    * [擷圖與編修一次完成的開源軟體 Shutter](APP/Apps-201109-Shutter.md)
    * [用 GIMP 輕鬆做出 LOMO 效果！](APP/Apps-201202-GIMP.md) 
    * [多功能的標記語言及排版系統 - LaTeX](APP/Apps-201203-LaTeX.md)
+   * [Sigil－自製電子書的開源利器](APP/Apps-201206-Sigil.md)
 * CMS
 * DB
 * Game
