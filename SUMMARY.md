@@ -48,6 +48,7 @@
    * [GNU Cash－從今天開始記帳！](APP/Apps-201303-GNUCash.md)
    * [JStock－開源的股票看盤軟體](APP/Apps-201304-JStock.md)
    * [GCStar 收集狂的藏寶箱](APP/Apps-201306-GCStar.md)
+   * [Sphinx - 用 reStructuredText 寫網站與書](APP/Apps-201307-Sphinx.md)
 * CMS
 * DB
 * Game
