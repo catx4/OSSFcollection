@@ -47,6 +47,7 @@
    * [OpenMeetings - 自由軟體線上會議系統](APP/Apps-201210-OpenMeetings.md)
    * [GNU Cash－從今天開始記帳！](APP/Apps-201303-GNUCash.md)
    * [JStock－開源的股票看盤軟體](APP/Apps-201304-JStock.md)
+   * [GCStar 收集狂的藏寶箱](APP/Apps-201306-GCStar.md)
 * CMS
 * DB
 * Game
