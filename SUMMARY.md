@@ -44,6 +44,7 @@
    * [Simile Widget Timeline - 用靜態網頁表現時間線](APP/Apps-201209-SWT.md)
    * [Graphviz - 用指令來畫關係圖吧！](APP/Apps-201210-Graphviz.md)
    * [MyPaint 今天來畫圖吧！](APP/Apps-201210-MyPaint.md)
+   * [OpenMeetings - 自由軟體線上會議系統](APP/Apps-201210-OpenMeetings.md)
 * CMS
 * DB
 * Game
