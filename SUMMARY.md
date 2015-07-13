@@ -49,6 +49,7 @@
    * [JStock－開源的股票看盤軟體](APP/Apps-201304-JStock.md)
    * [GCStar 收集狂的藏寶箱](APP/Apps-201306-GCStar.md)
    * [Sphinx - 用 reStructuredText 寫網站與書](APP/Apps-201307-Sphinx.md)
+   * [KeePassX －－ 簡單易用的密碼管理軟體](APP/Apps-201309-KeePassX.md)
 * CMS
 * DB
 * Game
