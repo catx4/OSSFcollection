@@ -46,6 +46,7 @@
    * [MyPaint 今天來畫圖吧！](APP/Apps-201210-MyPaint.md)
    * [OpenMeetings - 自由軟體線上會議系統](APP/Apps-201210-OpenMeetings.md)
    * [GNU Cash－從今天開始記帳！](APP/Apps-201303-GNUCash.md)
+   * [JStock－開源的股票看盤軟體](APP/Apps-201304-JStock.md)
 * CMS
 * DB
 * Game
