@@ -22,36 +22,35 @@
 
 在安裝 openmeetings 前，有些東西是必要的，要先準備好：
 
-1.  JRE (java runtime environment)，安裝 openjdk。
-     $ sudo apt-get install openjdk-7-jre
+1.  JRE (java runtime environment)，安裝 openjdk。```$ sudo apt-get install openjdk-7-jre```
 
 2.  要能夠分享桌面，必須要能執行 .jnlp 檔，裝上 icedtea-netx
-     $ sudo apt-get install icedtea-netx
+    ```$ sudo apt-get install icedtea-netx```
 
 3.  將桌面錄製成影片或滙入 .avi, .flv, .mov, .mp4 到白板要安裝工具。
-     $ sudo apt-get install ffmpeg sox swftools
+    ```$ sudo apt-get install ffmpeg sox swftools```
 
     debian wheezy 的 swftools 裡並沒有 pdf2swf 這個指令，所以無法上傳 pdf 檔來做簡報，若一定要有，請自行從原始碼編譯。
 
 4.  在白板中匯入圖片，要圖片轉檔工具。
-     $ sudo apt-get install imagemagick
+    ```$ sudo apt-get install imagemagick```
 
 5.  要在白板中匯入 office 檔，要裝上 libreoffice 或 openoffice 及轉檔工具 jodconverter。
-     $ sudo apt-get install libreoffice
+    ```$ sudo apt-get install libreoffice```
 
     openmeetings 滙入 .doc, .docx, .ppt, .pptx，都是用 libreoffice 或 openoffice 去做轉換動作，所以在 openmeetings 這台伺服器上一定要裝 office。而呼叫 office 來做轉換的動作，則由 jodconverter 來完成。
 
     因為 openmeetings 在檔案上傳後，都是轉成 pdf，所以要安裝 ghostscript。
-     $ sudo apt-get install ghostscript
+    ```$ sudo apt-get install ghostscript```
 
 6.  上傳的 office 要支援中文，系統上要裝 utf8 中文字型。
-     $ sudo apt-get install ttf-arphic-uming ttf-arphic-ukai
+    ```$ sudo apt-get install ttf-arphic-uming ttf-arphic-ukai```
 
     若之前舊文件有用 big5 字型，也要安裝 big5 字型。
-     $ sudo apt-get install ttf-arphic-bsmi00lp ttf-arphic-bkai00mp
+    ```$ sudo apt-get install ttf-arphic-bsmi00lp ttf-arphic-bkai00mp```
 
-    若文件用到 windows 的細明體的話，預設 linux 並沒有，所以轉換後會變亂碼，直接將字型從 windows 拷貝到 linux 下即可。 $ sudo mkdir /usr/share/fonts/truetype/windows/
-     $ sudo cp mingliu.ttc /usr/share/fonts/truetype/windows/
+    若文件用到 windows 的細明體的話，預設 linux 並沒有，所以轉換後會變亂碼，直接將字型從 windows 拷貝到 linux 下即可。 ```$ sudo mkdir /usr/share/fonts/truetype/windows/```
+    ```$ sudo cp mingliu.ttc /usr/share/fonts/truetype/windows/```
 
 ### 開始安裝：
 
@@ -59,24 +58,24 @@
 
 解開到指定目錄：
 
-$ mkdir /media/share/apps/openmeetings /
- $ tar xvf apache-openmeetings-incubating-2.0.0.r1361497-14-07-2012_1108.tar.gz -C /media/share/apps/openmeetings
+```$ mkdir /media/share/apps/openmeetings ```/
+ ```$ tar xvf apache-openmeetings-incubating-2.0.0.r1361497-14-07-2012_1108.tar.gz -C /media/share/apps/openmeetings```
 
 由於 debian wheezy 裡的 jodconverter 是 2.2.2 版，必須將 office 啟動成一個 service 在背景跑，listen 一個 tcp port，然後 jodconverter 2.x 再透過 tcp port 去要求 office 做轉換動作。
 
 但是 jodconverter 3.0 則 office 不用在背景跑，jodconverter 3.x 會去呼叫 office 來轉檔，轉完後會關閉 office，所以用 3.x 版比較省資源 。
 
 jodconverter 2.x: $ sudo apt-get install jodconverter
- $ soffice --headless --nofirststartwizard --accept="socket,host=localhost,port=8100;urp"
+ ```$ soffice --headless --nofirststartwizard --accept="socket,host=localhost,port=8100;urp"```
  會 listen 在 localhost:8100, 而 jodconverter 2.x 在轉換時會自行去跟 office 溝通。
 
 或使用 jodconverter 3.x:
  下載 jodconverter 3.0:
  [http://code.google.com/p/jodconverter/downloads/list](http://code.google.com/p/jodconverter/downloads/list)
  解開至 openmeetings 目錄裡
- $ unzip jodconverter-core-3.0-beta-4-dist.zip -d /media/share/apps/openmeetings/ jodconverter 是 3.0-beta-4, 若下次 beta 5 或正式版釋出，則路徑會不同，要再修改，所以預先做個連結，以後不用再到 openmeetings 裡修改路徑，將新版做個連結即可。
- $ cd /media/share/apps/openmeetings/
- $ ln -sf jodconverter-core-3.0-beta-4 jodconverter-core
+``` $ unzip jodconverter-core-3.0-beta-4-dist.zip -d /media/share/apps/openmeetings/ jodconverter``` 是 3.0-beta-4, 若下次 beta 5 或正式版釋出，則路徑會不同，要再修改，所以預先做個連結，以後不用再到 openmeetings 裡修改路徑，將新版做個連結即可。
+ ```$ cd /media/share/apps/openmeetings/```
+``` $ ln -sf jodconverter-core-3.0-beta-4 jodconverter-core```
 
 預設 openmeetings 資料庫是用 apache derby database，若要改成 mysql 則需在此先準備好。
 
@@ -108,10 +107,10 @@ jodconverter 2.x: $ sudo apt-get install jodconverter
 
 ### 啟動 openmeetings server：
 
-$ cd /media/share/apps/openmeetings/
- $ ./red5.sh
+```$ cd /media/share/apps/openmeetings/```
+ ```$ ./red5.sh```
  假如你的 openmeetings 伺服器需要更好效能、能承受更高負載，則啟動時請改用：
- $ ./red5-highperf.sh
+ ```$ ./red5-highperf.sh```
 
 等個約 30 秒，若沒問題，伺服務啟動完成，會 listen tcp port 5080, 1935, 8088 和其他幾個 port。
 
@@ -132,24 +131,16 @@ Port 5080: HTTP (瀏覽器登入及檔案上傳下載)
 
 在 Configuration 部份，預設是系統會寄一封信給新註冊的使用者，使用者收信後，點選 email 上的連結啟動帳號，若是不想這麼麻煩，可修改
 
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">Send Email to new registered Users (sendEmailAtRegister)</span></span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;">No</span> |
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">New Users need to verify their EMail (sendEmailWithVerficationCode)</span></span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;">No</span> |
+Send Email to new registered Users (sendEmailAtRegister) 		No
+New Users need to verify their EMail (sendEmailWithVerficationCode) 		No
 
 預設電子郵件伺服器是指向 localhost, 所以本機 mail server 要 listen tcp port 25；另外也可使用外部 smtp server, 如 google 的 smtp.gmail.com 的方式。
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">SMTP-Server (smtp_server)</span></span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif"><span face="Times New Roman, serif">smtp.gmail.com</span></span></span> |
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">SMTP-Server Port (default Smtp-Server Port is 25) (smtp_port)</span></span> | 587 |
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">SMTP-Username (email_userpass)</span>
-</span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">gmail</span> 使用者名稱<span face="Times New Roman, serif">(</span>自行設定<span face="Times New Roman, serif">)</span></span> |
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">SMTP-Userpass (email_userpass)</span></span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">gmail</span> 密碼<span face="Times New Roman, serif">(</span>自行設定<span face="Times New Roman, serif">)</span>
-</span> |
-
-| <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;"><span face="Times New Roman, serif">Enable TLS in Mail Server Auth</span></span> | <span face="Times New Roman, serif" style="font-family: Times New Roman,serif;">Yes
-</span> |
+SMTP-Server (smtp_server) 		smtp.gmail.com
+SMTP-Server Port (default Smtp-Server Port is 25) (smtp_port) 		587
+SMTP-Username (email_userpass)
+		gmail 使用者名稱(自行設定)
+SMTP-Userpass (email_userpass) 		gmail 密碼(自行設定)
+Enable TLS in Mail Server Auth 		Yes
 
 在 Converters 部份，若是有在 PATH 裡的執行檔，則不用在此設定，可直接找到。因此只要調整 jodconverter 3.x 版的 JOD Path：
  JOD Path: ./jodconverter-core/lib
@@ -166,7 +157,7 @@ Port 5080: HTTP (瀏覽器登入及檔案上傳下載)
 
 剛登入時是位於 "Dashboard" ，如圖1。
 
-<div>[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_01.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_01.jpg)</div>
+[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_01.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_01.jpg)   
 
 ▲圖1 Dashboard
 
@@ -201,7 +192,7 @@ Port 5080: HTTP (瀏覽器登入及檔案上傳下載)
 
 首先會彈出一個 "Choose device" 視窗，選擇 webcam、麥克風及解析度，按 [Start recording test] 確認 webcam 有看到影像，沒問題按 [Start conference] 進入會議室，如圖2。
 
-<div>[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_02.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_02.jpg)</div>
+[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_02.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_02.jpg)  
 
 ▲圖2 會議室
 
@@ -238,8 +229,7 @@ Port 5080: HTTP (瀏覽器登入及檔案上傳下載)
 
 在按下停止錄影後，伺服器還在背景做轉換動作，所以要過個幾分鐘，影片才會出現在 Dashboard 裡的 Recordings，不要認為為什麼沒看到影片。
 
-<div>[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_03.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_03.jpg)</div>
-
+[![alt](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_03.jpg)](http://www.openfoundry.org/images/121009/OpenMeetings/OpenMeetings_03.jpg)  
 ▲圖3 桌面分享及錄影視窗
 
 左邊：
