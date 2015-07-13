@@ -50,6 +50,7 @@
    * [GCStar 收集狂的藏寶箱](APP/Apps-201306-GCStar.md)
    * [Sphinx - 用 reStructuredText 寫網站與書](APP/Apps-201307-Sphinx.md)
    * [KeePassX －－ 簡單易用的密碼管理軟體](APP/Apps-201309-KeePassX.md)
+   * [Sound Juicer－－從 CD 中擷取音樂](APP/Apps-201310-SoundJuicer.md)
 * CMS
 * DB
 * Game
