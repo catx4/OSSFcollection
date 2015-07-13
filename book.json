@@ -1,5 +1,5 @@
 {
     
-    Book built with GitBook {{ gitbook.2.0.0 }}
+   "gitbook": ["gitbook@2.1.0"]
     
 }
