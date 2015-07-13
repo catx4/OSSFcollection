@@ -1,7 +1,7 @@
 # Sphinx - 用 reStructuredText 寫網站與書
 作者：林雪凡，2013 年 7 月投稿。
 
-*軟體名稱：Sphinx
+* 軟體名稱：Sphinx
 * 介紹版本：1.1.3
 * 官網：[http://sphinx-doc.org/](http://sphinx-doc.org/)
 * 授權：BSD license
