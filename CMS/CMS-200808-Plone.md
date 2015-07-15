@@ -11,7 +11,7 @@ Plone 是一套網頁式內容管理系統 (Web Content Management System, Web C
 
 從技術層面來看，Plone 以 Zope 為基礎。Zope 是 Z Object Publishing Environment 的縮寫，一套以 Python 程式語言撰寫的 Web Application Server 框架及實作品，它提供的服務包括網站伺服器、資料庫、會員及權限管理、搜尋引擎等，開發人員可以「站在巨人肩上」設計自己的模組或應用程式，而 Plone 就是架構在 Python 和 Zope 之上，著重於內容管理領域的應用程式。 | [1] NASA Science 是採用的網站之一，可造訪 [http://nasascience.nasa.gov/](http://science.nasa.gov/) 網址。
 
-![](http://www.openfoundry.org/images/080901/1-plone-cia.png)](http://www.openfoundry.org/images/080901/1-plone-cia.png)  
+[![](http://www.openfoundry.org/images/080901/1-plone-cia.png)](http://www.openfoundry.org/images/080901/1-plone-cia.png)  
 
 ###  Zope 與 Plone 的發展歷史
 
@@ -21,7 +21,7 @@ Zope 系統最早是針對新聞媒體界的應用需求所設計，因此除了
 
 CMF 是一個在 Zope 開發環境之上的入口網站服務架框，由於它的開發焦點是在基礎服務模組的研發與測試，長久以來都有不夠穩定，介面不夠美觀、易用度不高的缺點，Plone 專案計畫的主持人 － Alan Runyan 與 Alexander Limi，便接手解決上述的問題，沒想到這樣的改善構想，迅速吸引廣大開發者的認同與參與，Zope 與 CMF 便退居 Plone 這顆閃亮巨星幕後了。
 
-![](http://www.openfoundry.org/images/080901/2-developmentframework.png)](http://www.openfoundry.org/images/080901/2-developmentframework.png)
+[![](http://www.openfoundry.org/images/080901/2-developmentframework.png)](http://www.openfoundry.org/images/080901/2-developmentframework.png)
 
 
 CMS 是個競爭激烈的市場 [2] ，Plone 社群過往的表現如何呢? 2003 年十月，O'Reilly 與 OSDir 舉辦「開放源碼社群送進 COMDEX」競賽，Plone 是優勝社群之一。2006 年十一月 Packt 舉辦 Open Source CMS Award 活動，Plone 獲得第三名。2007 年六月在 CMSWatch 的 Web CMS Report 四大評比中，Plone 獲得極高的平均分數。2007 年八月 Plone 3 推出，正式納入 OpenID 在內的支援。2008 年二月，Google 的 Highly Open Participation Contest 贊助 29 項 Plone 改善工作。
@@ -32,41 +32,38 @@ CMS 是個競爭激烈的市場 [2] ，Plone 社群過往的表現如何呢? 200
 
 2008 Content Technology Vendor Map<
 
-<div>[![2008 Content Technology Vendor Map](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)</div>
+[![2008 Content Technology Vendor Map](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)</div>
 
 ### ◎ 便利的安裝過程
 
-在 Windows、Linux、Mac 環境都能下載 Plone 自動安裝檔，協助使用者第一次安裝就上手。以 Windows Installer 為例，下載執行 Plone-3.1.2.exe 檔案後，設定管理員帳號密碼，透過 Plone Controller 就可以控制系統的啟動與停止。</div>
+在 Windows、Linux、Mac 環境都能下載 Plone 自動安裝檔，協助使用者第一次安裝就上手。以 Windows Installer 為例，下載執行 Plone-3.1.2.exe 檔案後，設定管理員帳號密碼，透過 Plone Controller 就可以控制系統的啟動與停止。  
 
-<div>![](http://www.openfoundry.org/images/080901/3-installer1.png)[![](http://www.openfoundry.org/images/080901/3-installer2.png)](http://www.openfoundry.org/images/080901/3-installer2.png)
-</div>
+[![](http://www.openfoundry.org/images/080901/3-installer1.png)[![](http://www.openfoundry.org/images/080901/3-installer2.png)](http://www.openfoundry.org/images/080901/3-installer2.png)  
 
-<div>如果把 Plone 視為處理內容的前台，那麼 Zope 就是管理系統的後台，這後台被稱為 Zope Management Interface (ZMI)，預設的執行埠號是 8080，也就是要從 http://localhost:8080/manage 這樣的網址，輸入安裝時所設定的管理員帳號密碼。</div>
+如果把 Plone 視為處理內容的前台，那麼 Zope 就是管理系統的後台，這後台被稱為 Zope Management Interface (ZMI)，預設的執行埠號是 8080，也就是要從 http://localhost:8080/manage 這樣的網址，輸入安裝時所設定的管理員帳號密碼。
 
 [![](http://www.openfoundry.org/images/080901/3-plonecontroller.png)](http://www.openfoundry.org/images/080901/3-portsetting.png)[![](http://www.openfoundry.org/images/080901/3-portsetting.png)](http://www.openfoundry.org/images/080901/3-portsetting.png)
 
 <div>ZMI 操作方式類似檔案總管，左方的選項類似目錄，點擊後會在右方的畫面展開詳細的清單資訊。</div>
 
-<div>[![](http://www.openfoundry.org/images/080901/3-zmi-zope.png)](http://www.openfoundry.org/images/080901/3-zmi-zope.png)
-</div>
+[![](http://www.openfoundry.org/images/080901/3-zmi-zope.png)](http://www.openfoundry.org/images/080901/3-zmi-zope.png)
 
-<div>預設會建立一個名為 Plone 的網站，點擊 Plone 後會列出完整的後台功能項目。不必過於擔心，想要進行基本的內容管理，並不需要了解複雜的後台功能，簡易的 Plone 前台介面就能滿足絕大部份的需求。</div>
 
-<div>[![](http://www.openfoundry.org/images/080901/3-zmi-plone.png)](http://www.openfoundry.org/images/080901/3-zmi-plone.png)
-</div>
+預設會建立一個名為 Plone 的網站，點擊 Plone 後會列出完整的後台功能項目。不必過於擔心，想要進行基本的內容管理，並不需要了解複雜的後台功能，簡易的 Plone 前台介面就能滿足絕大部份的需求。
 
-<div>例如，會員註冊的設定方式，可由 Site Setup 的 Security 項目進行調整，最常見的設定方式，是指定使用者可以選擇自己的密碼，並擁有自己的目錄空間。</div>
+[![](http://www.openfoundry.org/images/080901/3-zmi-plone.png)](http://www.openfoundry.org/images/080901/3-zmi-plone.png)
 
-<div>[![](http://www.openfoundry.org/images/080901/3-sitesetup-security.png)](http://www.openfoundry.org/images/080901/3-sitesetup-security.png)
-</div>
+例如，會員註冊的設定方式，可由 Site Setup 的 Security 項目進行調整，最常見的設定方式，是指定使用者可以選擇自己的密碼，並擁有自己的目錄空間。
 
-<div>另外，管理員可以決定網站是否提示使用者能夠自行註冊，如果選擇要，首頁就會出現 Register 的提示字樣，如果選擇不要，管理員可以從 Site Setup 的 Users and Groups 項目新增帳號。</div>
+[![](http://www.openfoundry.org/images/080901/3-sitesetup-security.png)](http://www.openfoundry.org/images/080901/3-sitesetup-security.png)
+
+
+另外，管理員可以決定網站是否提示使用者能夠自行註冊，如果選擇要，首頁就會出現 Register 的提示字樣，如果選擇不要，管理員可以從 Site Setup 的 Users and Groups 項目新增帳號。
 
 ### ◎ 一致的內容管理介面
 
-<div>依據登入帳號的權限，使用者會看到不同的瀏覽與管理介面，但這些介面都很直覺，而且相當一致。</div>
-
-<div>[![Interface Consistency - View from an Anonymous Guest](http://www.openfoundry.org/images/080901/4-consistentlook1.png)](http://www.openfoundry.org/images/080901/4-consistentlook1.png)
+依據登入帳號的權限，使用者會看到不同的瀏覽與管理介面，但這些介面都很直覺，而且相當一致。  
+[![Interface Consistency - View from an Anonymous Guest](http://www.openfoundry.org/images/080901/4-consistentlook1.png)](http://www.openfoundry.org/images/080901/4-consistentlook1.png)
 </div>
 
 <div>未登入帳號之前，只會看到 Log in 的提示，並不能管理內容。</div>
