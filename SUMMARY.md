@@ -31,11 +31,11 @@
    * [用自由軟體 Scribus 來輸出文件（3）-製作活動海報及手冊](APP/Apps-201012-Scribus3.md)
    * [以 IMSpector 側錄即時通訊軟體](APP/Apps-201101-IMSpector.md)
    * [用自由軟體 Scribus 來輸出文件（4）- 製作模板並轉為 PDF 輸出](APP/Apps-201101-Scribus4.md)
-   * [用自由軟體 Scribus 來輸出文件（5）- 文字應用](APP/Apps-201102-Scribus5.md) 
-   * [讓 Android 手機告訴你眼前顏色的名字](APP/Apps-201104-Android.md) 
+   * [用自由軟體 Scribus 來輸出文件（5）- 文字應用](APP/Apps-201102-Scribus5.md)
+   * [讓 Android 手機告訴你眼前顏色的名字](APP/Apps-201104-Android.md)
    * [透過 Android 手機隨時隨地理財](APP/Apps-201108-Android.md)
    * [擷圖與編修一次完成的開源軟體 Shutter](APP/Apps-201109-Shutter.md)
-   * [用 GIMP 輕鬆做出 LOMO 效果！](APP/Apps-201202-GIMP.md) 
+   * [用 GIMP 輕鬆做出 LOMO 效果！](APP/Apps-201202-GIMP.md)
    * [多功能的標記語言及排版系統 - LaTeX](APP/Apps-201203-LaTeX.md)
    * [Sigil－自製電子書的開源利器](APP/Apps-201206-Sigil.md)
    * [Calibre－萬用的電子書管理軟體](APP/Apps-201207-Calibre.md)
@@ -55,7 +55,7 @@
    * [視窗自動排列 Desk x-tile](APP/Apps-20100412-Deskxlite.md)
    * [在戶外盡享家中音樂庫：Subsonic](APP/Apps-20100802-Subsonic.md)
    * [Kalzium－－您手邊的化學字典](APP/Apps-20131127-Kalzium.md)
-* CMS
+* [CMS](CMS/README.md)
 * DB
 * Game
 * Guide
