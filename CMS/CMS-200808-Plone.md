@@ -66,45 +66,42 @@ CMS 是個競爭激烈的市場 [2] ，Plone 社群過往的表現如何呢? 200
 [![Interface Consistency - View from an Anonymous Guest](http://www.openfoundry.org/images/080901/4-consistentlook1.png)](http://www.openfoundry.org/images/080901/4-consistentlook1.png)
 </div>
 
-<div>未登入帳號之前，只會看到 Log in 的提示，並不能管理內容。</div>
+未登入帳號之前，只會看到 Log in 的提示，並不能管理內容。
 
-<div>[![Interface Consistency - View from an Authenticated User](http://www.openfoundry.org/images/080901/4-consistentlook2.png)](http://www.openfoundry.org/images/080901/4-consistentlook2.png)
-</div>
+[![Interface Consistency - View from an Authenticated User](http://www.openfoundry.org/images/080901/4-consistentlook2.png)](http://www.openfoundry.org/images/080901/4-consistentlook2.png)  
 
-<div>以一般會員身份登入後，瀏覽擁有權限的內容項目，例如 My Folder 目錄裡，就會看到內容管理的選單提示。</div>
 
-<div>[![Interface Consistency - View from a Manager User](http://www.openfoundry.org/images/080901/4-consistentlook3.png)](http://www.openfoundry.org/images/080901/4-consistentlook3.png)
-</div>
+以一般會員身份登入後，瀏覽擁有權限的內容項目，例如 My Folder 目錄裡，就會看到內容管理的選單提示。</div>
 
-<div>以管理員身份登入的話，能夠管理所有的內容項目，包括顯示、新增、修改、調整狀態、分享、版本管理等功能。</div>
+[![Interface Consistency - View from a Manager User](http://www.openfoundry.org/images/080901/4-consistentlook3.png)](http://www.openfoundry.org/images/080901/4-consistentlook3.png)  
 
-<div>Plone 預設提供的內容項目，包括有 Folder、Page、File、Image、News Item、Event、Link、Collection 等，一般 HTML 格式的內容以 Page 來管理，PDF 或 Office 格式的檔案以 File 來管理，圖片檔案以 Image 來管理，發佈的 News Item 會列在新聞區，Event 則會列在行事曆上。</div>
+以管理員身份登入的話，能夠管理所有的內容項目，包括顯示、新增、修改、調整狀態、分享、版本管理等功能。
 
-<div>[![](http://www.openfoundry.org/images/080901/4-eventediting.png)](http://www.openfoundry.org/images/080901/4-eventediting.png)
-</div>
+Plone 預設提供的內容項目，包括有 Folder、Page、File、Image、News Item、Event、Link、Collection 等，一般 HTML 格式的內容以 Page 來管理，PDF 或 Office 格式的檔案以 File 來管理，圖片檔案以 Image 來管理，發佈的 News Item 會列在新聞區，Event 則會列在行事曆上。  
+[![](http://www.openfoundry.org/images/080901/4-eventediting.png)](http://www.openfoundry.org/images/080901/4-eventediting.png)
 
-<div>以新增 Event 為例，待編輯的欄位分成「必填」與「選填」兩種，像標紅點的 Title 和 Event 開始與結束時間，都是必填欄位，若忘了填寫，系統會即時顯示警告訊息。本文的編輯框搭配圖形化的排版工具，使用者可以調整字形、設定連結、插入圖片或表格等。</div>
 
-<div>令人耳目一新的是，Plone 3 開始導入即時編輯 (inline editing) 的 AJAX 功能，讓使用者可以快速編輯特定的資料欄位，例如點擊一下標題欄位，就可以直接修改標題的內容，而不必載入所有的內容資料。</div>
+以新增 Event 為例，待編輯的欄位分成「必填」與「選填」兩種，像標紅點的 Title 和 Event 開始與結束時間，都是必填欄位，若忘了填寫，系統會即時顯示警告訊息。本文的編輯框搭配圖形化的排版工具，使用者可以調整字形、設定連結、插入圖片或表格等。
+
+令人耳目一新的是，Plone 3 開始導入即時編輯 (inline editing) 的 AJAX 功能，讓使用者可以快速編輯特定的資料欄位，例如點擊一下標題欄位，就可以直接修改標題的內容，而不必載入所有的內容資料。
 
 ### ◎ 便利的搜尋引擎服務
 
-<div>內容管理系統提供搜尋引擎並不稀奇，但 Plone 額外提供 Live Search 功能，使用者如果輸入 wel 字樣，系統會馬上顯示符合的內容項目，例如內容中包含 welcome 或 well 的內容項目都符合 Live Search 的顯示條件。</div>
+內容管理系統提供搜尋引擎並不稀奇，但 Plone 額外提供 Live Search 功能，使用者如果輸入 wel 字樣，系統會馬上顯示符合的內容項目，例如內容中包含 welcome 或 well 的內容項目都符合 Live Search 的顯示條件。   
+[![](http://www.openfoundry.org/images/080901/5-livesearch.png)  
 
-<div>![](http://www.openfoundry.org/images/080901/5-livesearch.png)
-</div>
 
-<div>Plone 也支援關鍵字詞的索引功能，例如管理員於 News Item 內容編輯的畫面中，在 Categorization 選項裡可以設定 Category 內容，指的就是「關鍵字」。既有的關鍵字列在 Existing categories 方框裡，以藍底白字代表選用的關鍵字，按住 Shift 鍵，可一次點選多個關鍵字。想要新增關鍵字，在 New categories 方框裡填寫即可。</div>
+Plone 也支援關鍵字詞的索引功能，例如管理員於 News Item 內容編輯的畫面中，在 Categorization 選項裡可以設定 Category 內容，指的就是「關鍵字」。既有的關鍵字列在 Existing categories 方框裡，以藍底白字代表選用的關鍵字，按住 Shift 鍵，可一次點選多個關鍵字。想要新增關鍵字，在 New categories 方框裡填寫即可。
 
-<div>[![](http://www.openfoundry.org/images/080901/5-categorizationrelateditems.png)](http://www.openfoundry.org/images/080901/5-categorizationrelateditems.png)
-</div>
+[![](http://www.openfoundry.org/images/080901/5-categorizationrelateditems.png)](http://www.openfoundry.org/images/080901/5-categorizationrelateditems.png)  
 
-<div>選用的關鍵字會出現在「filed under:」字樣之後。另外，Categorization 選項裡也可以設定相關內容，新增的相關內容會出現在 Related content 方框裡。</div>
 
-<div>[![](http://www.openfoundry.org/images/080901/5-filedunderrelatedcontent.png)](http://www.openfoundry.org/images/080901/5-filedunderrelatedcontent.png)
-</div>
+選用的關鍵字會出現在「filed under:」字樣之後。另外，Categorization 選項裡也可以設定相關內容，新增的相關內容會出現在 Related content 方框裡。
 
-<div>歸功於內建的物件式資料庫，Plone 能夠動態地索引內容資料，有效地回應使用者的搜尋需求，另一方面，它也提供版本管理和復原功能，也就是說，使用者的每一步動作，系統都能記錄下來，如果誤刪了檔案，管理員就可以到 ZMI 介面取消刪除的動作，讓檔案復原。</div>
+[![](http://www.openfoundry.org/images/080901/5-filedunderrelatedcontent.png)](http://www.openfoundry.org/images/080901/5-filedunderrelatedcontent.png)
+
+
+歸功於內建的物件式資料庫，Plone 能夠動態地索引內容資料，有效地回應使用者的搜尋需求，另一方面，它也提供版本管理和復原功能，也就是說，使用者的每一步動作，系統都能記錄下來，如果誤刪了檔案，管理員就可以到 ZMI 介面取消刪除的動作，讓檔案復原。</div>
 
 [![](http://www.openfoundry.org/images/080901/5-undotransactions.png)](http://www.openfoundry.org/images/080901/5-undotransactions.png)  
 
