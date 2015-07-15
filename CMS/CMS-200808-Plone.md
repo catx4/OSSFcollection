@@ -30,15 +30,16 @@ CMS 是個競爭激烈的市場 [2] ，Plone 社群過往的表現如何呢? 200
 
 | [2] CMS Watch 整理的 [Content Technology Vendor Map](http://www.realstorygroup.com/vendormap/) 列出了主要的 CMS 供應商。
 
-2008 Content Technology Vendor Map<
+2008 Content Technology Vendor Map
 
-[![2008 Content Technology Vendor Map](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)</div>
+[![2008 Content Technology Vendor Map](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)](http://www.openfoundry.org/images/080901/2-cms-watch-subway-2008-small.jpg)
 
-### ◎ 便利的安裝過程
+###  便利的安裝過程
 
 在 Windows、Linux、Mac 環境都能下載 Plone 自動安裝檔，協助使用者第一次安裝就上手。以 Windows Installer 為例，下載執行 Plone-3.1.2.exe 檔案後，設定管理員帳號密碼，透過 Plone Controller 就可以控制系統的啟動與停止。  
 
-[![](http://www.openfoundry.org/images/080901/3-installer1.png)[![](http://www.openfoundry.org/images/080901/3-installer2.png)](http://www.openfoundry.org/images/080901/3-installer2.png)  
+[![](http://www.openfoundry.org/images/080901/3-installer1.png)  
+[![](http://www.openfoundry.org/images/080901/3-installer2.png)](http://www.openfoundry.org/images/080901/3-installer2.png)  
 
 如果把 Plone 視為處理內容的前台，那麼 Zope 就是管理系統的後台，這後台被稱為 Zope Management Interface (ZMI)，預設的執行埠號是 8080，也就是要從 http://localhost:8080/manage 這樣的網址，輸入安裝時所設定的管理員帳號密碼。
 
@@ -60,7 +61,7 @@ CMS 是個競爭激烈的市場 [2] ，Plone 社群過往的表現如何呢? 200
 
 另外，管理員可以決定網站是否提示使用者能夠自行註冊，如果選擇要，首頁就會出現 Register 的提示字樣，如果選擇不要，管理員可以從 Site Setup 的 Users and Groups 項目新增帳號。
 
-### ◎ 一致的內容管理介面
+###  一致的內容管理介面
 
 依據登入帳號的權限，使用者會看到不同的瀏覽與管理介面，但這些介面都很直覺，而且相當一致。  
 [![Interface Consistency - View from an Anonymous Guest](http://www.openfoundry.org/images/080901/4-consistentlook1.png)](http://www.openfoundry.org/images/080901/4-consistentlook1.png)
@@ -85,7 +86,7 @@ Plone 預設提供的內容項目，包括有 Folder、Page、File、Image、New
 
 令人耳目一新的是，Plone 3 開始導入即時編輯 (inline editing) 的 AJAX 功能，讓使用者可以快速編輯特定的資料欄位，例如點擊一下標題欄位，就可以直接修改標題的內容，而不必載入所有的內容資料。
 
-### ◎ 便利的搜尋引擎服務
+###  便利的搜尋引擎服務
 
 內容管理系統提供搜尋引擎並不稀奇，但 Plone 額外提供 Live Search 功能，使用者如果輸入 wel 字樣，系統會馬上顯示符合的內容項目，例如內容中包含 welcome 或 well 的內容項目都符合 Live Search 的顯示條件。   
 [![](http://www.openfoundry.org/images/080901/5-livesearch.png)  
@@ -106,7 +107,7 @@ Plone 也支援關鍵字詞的索引功能，例如管理員於 News Item 內容
 [![](http://www.openfoundry.org/images/080901/5-undotransactions.png)](http://www.openfoundry.org/images/080901/5-undotransactions.png)  
 
 
-### ◎ 群組與工作流程
+###  群組與工作流程
 
 Plone 支援基本的工作流程，預設情境是針對媒體出版業的需求，將內容項目分成 private、pending review、published 三種狀態，當使用者剛新增內容項目時，內容項目會處於 private 狀態，當使用者提交內容項目給審核者後，就會處於 pending review 狀態，直到審核者確認可以發佈時，內容項目就會處於 published 狀態，如果審核者退回給原作者，則內容項目又會處於 private 狀態。</div>
 
@@ -134,6 +135,6 @@ Plone 開發者很重視操作親和度，在改善功能及介面美觀之餘�
 
 <div><span style="color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 16px; line-height: 39.46666717529297px; background-color: rgb(255, 255, 255);">| [3] LearnPlone:</span> [http://learnplone.org/](http://learnplone.org/)</div>
 
-###  關於作者
+####  關於作者
 
 <div>marr，現職是中研院資訊所研究助理。專長是技術文件撰寫、Linux系統整合、數位學習系統，興趣是英式搖滾、認知心理學、傳記文學，嚮往北歐的社會制度。電子郵件： marr.tw@gmail.com 。</div>
