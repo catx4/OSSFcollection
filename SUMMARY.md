@@ -54,6 +54,7 @@
    * [Gnome、KDE 與 Cinnamon 的平鋪視窗控制](APP/Apps-201403-Cinnamon.md)
    * [視窗自動排列 Desk x-tile](APP/Apps-20100412-Deskxlite.md)
    * [在戶外盡享家中音樂庫：Subsonic](APP/Apps-20100802-Subsonic.md)
+   * [Kalzium－－您手邊的化學字典](APP/Apps-20131127-Kalzium.md)
 * CMS
 * DB
 * Game
