@@ -51,6 +51,7 @@
    * [Sphinx - 用 reStructuredText 寫網站與書](APP/Apps-201307-Sphinx.md)
    * [KeePassX －－ 簡單易用的密碼管理軟體](APP/Apps-201309-KeePassX.md)
    * [Sound Juicer－－從 CD 中擷取音樂](APP/Apps-201310-SoundJuicer.md)
+   * [Gnome、KDE 與 Cinnamon 的平鋪視窗控制](APP/Apps-201403-Cinnamon.md)
 * CMS
 * DB
 * Game
