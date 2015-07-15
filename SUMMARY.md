@@ -56,6 +56,7 @@
    * [在戶外盡享家中音樂庫：Subsonic](APP/Apps-20100802-Subsonic.md)
    * [Kalzium－－您手邊的化學字典](APP/Apps-20131127-Kalzium.md)
 * [CMS](CMS/README.md)
+   * [Plone 內容管理系統](CMS/CMS-200808-Plone.md)
 * DB
 * Game
 * Guide
