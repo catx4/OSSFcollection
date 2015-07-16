@@ -63,6 +63,7 @@
 * DB
 * [Game](Game/README.md)
    * [你的老遊戲總管 D-Fend Reloaded](Game/Game-201104-DFend.md)
+   * [TripleA－－硬派的回合制策略遊戲](Game/Game-201311-TripleA.md)
 * Guide
 * Language
 * Security
