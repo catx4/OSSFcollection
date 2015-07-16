@@ -66,6 +66,7 @@
    * [TripleA－－硬派的回合制策略遊戲](Game/Game-201311-TripleA.md)
    * [DOSBox Game Launcher－－方便玩 Dos 遊戲的前端介面](Game/Game-20131213-DOSBox.md)
 * [Guide](Guide/README.md)
+   * [開放源碼商業模式系列（一）開放源碼軟體工具書](Guide/Guide-200507-business1.md)
 * Language
 * Security
 * System
