@@ -26,11 +26,11 @@ Sphinx 是款特別的出版軟體，以強大而又容易上手的輕型置標�
 
 關於 sphinx，fedora 18 的套件庫中就有，那就裝吧：
 
-<pre>sudo yum install python-sphinx</pre>
+`sudo yum install python-sphinx`
 
 此處裝的是 python2 版本，您也可以裝 python3 版本。如下：
 
-<pre>sudo yum install python3-sphinx</pre>
+`sudo yum install python3-sphinx`
 
 請擇一使用，兩種版本都各有一些問題需要調整，之後會儘可能提到。此外，也請儘量不要同時安裝以免意外混淆。
 
@@ -46,11 +46,11 @@ Windows 的安裝要透過 python 原碼包和 easy_install 包管理系統進�
 
 建立方式就是透過 sphinx-quickstart 程式。這是一個終端機程式，所以請打開您的終端機輸入以下指令：
 
-<pre>sphinx-quickstart</pre>
+`sphinx-quickstart`
 
 如果使用 fedora 下的 python3 版本則是：
 
-<pre>sphinx-quickstart-3.3</pre>
+`sphinx-quickstart-3.3`
 
 底下會出現一堆的選項，差不多所有的選項都能事後手動修改，所以不用太緊張。
 
@@ -90,7 +90,7 @@ reStructuredText（簡稱 rst 或 reST）是一種輕型置標語言，換句話
 <span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">提示</span>此處提醒您：除了首頁以外，您還可以在專案的目錄或子目錄下加入更多 .rst 檔案並撰寫他們。這些分散的檔案都可以被集成到您的文件中，一起發佈出去。
  要如何將多個不同的 .rst 檔案，依照正確的順序與結構聚合起來，請看之後的 toctree 章節。</span>
 
-#### reStructuredText 的標準語法
+### reStructuredText 的標準語法
 
 reStructuredText 的官方標準規格是由 [docutils](http://sourceforge.net/projects/docutils/) 專案在維護；而本回的主題 sphinx 專案又在其上擴展出了一些額外命令。此處我們先不管 sphinx 自訂的東西，先看看標準 reStructuredText 格式。
 
@@ -106,7 +106,7 @@ reStructuredText 的官方標準規格是由 [docutils](http://sourceforge.net/p
 
 關於想要快速試玩的人，可以用這個[線上編輯器](http://rst.ninjs.org/)來快速體會一下 reStructuredText。不過這個編輯器實作出來的版本比較舊，像是 code 指令與 math 指令等較新的指令都沒有做出來……但稍微玩一下還是沒問題啦。
 
-##### 注意語法中的空白分隔
+#### 注意語法中的空白分隔
 
 在標準 reStructuredText 格式中，您需要注意一下空白分隔的問題。
 
@@ -133,22 +133,22 @@ toctree 指令有兩個層面的作用，第一個就是告訴 sphinx 您的檔�
 
 舉例來說……
 
-<pre>一本實驗書
-==========
+        一本實驗書
+        ==========
 
-歡迎看本書，以下是目錄：
+        歡迎看本書，以下是目錄：
 
-.. toctree::
+        .. toctree::
 
-    intro
-    help
-    about
+            intro
+            help
+            about
 
-正文
-~~~~
+        正文
+        ~~~~
 
-八啦叭啦～♬
-</pre>
+        八啦叭啦～♬
+
 
 以上簡單的 toctree 範例只包含五行，意思是說，當前這一頁會將 intro.rst、help.rst、about.rst 三個檔案視為次級項目，並依照順序放在當前頁面之下。
 
@@ -172,20 +172,20 @@ toctree 指令有兩個層面的作用，第一個就是告訴 sphinx 您的檔�
 
 toctree 中還有些別的花樣可供設定，以下是個一口氣展現出 toctree 所有特徵的範例：
 
-<pre>.. toctree::
-    :maxdepth: 2
-    :numbered:
-    :titlesonly:
-    :glob:
-    :hidden:
+        .. toctree::
+            :maxdepth: 2
+            :numbered:
+            :titlesonly:
+            :glob:
+            :hidden:
 
-    intro
-    content/chapter1
-    content/chapter2
-    question/*
-    幫助 ＜help＞
-    about
-</pre>
+            intro
+            content/chapter1
+            content/chapter2
+            question/*
+            幫助 ＜help＞
+            about
+
 
 其中用兩個冒號引住的部份是參數旗標，粗略解釋如下：
 
@@ -213,26 +213,29 @@ toctree 中還有些別的花樣可供設定，以下是個一口氣展現出 to
 
 匯出操作很簡單，只要在專案資料夾下開終端機，輸入：
 
-<pre>make html</pre>
+```make html```
 
 一行就搞定了。
 
 您的匯出成果，預設會被放在專案資料夾下的 _build/html 資料夾下面，請去找找。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">注意！</span> 如果您使用了 python3 版本，此時可能無法直接匯出。因為 sphinx-build 指令不存在。
- 您可以透過修改 Makefile，將該檔案中的 sphinx-build 替換成 sphinx-build-3.3 來解決這個問題。</span>
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">注意！</span> 如果您使用了 python2 版本，此時**也**可能無法直接匯出。這多半是遇到 UnicodeError 的緣故。對此，請確保您的專案路徑中沒有出現非英文字元。
- 關於 python2 中的 Unicode 問題，本文後面也有一個更粗魯但直接的解決方案，您可以參考。
-</span>
+**注意！**
+如果您使用了 python3 版本，此時可能無法直接匯出。因為 sphinx-build 指令不存在。
+您可以透過修改 Makefile，將該檔案中的 sphinx-build 替換成 sphinx-build-3.3 來解決這個問題。
+
+**注意！**
+如果您使用了 python2 版本，此時**也**可能無法直接匯出。這多半是遇到 UnicodeError 的緣故。對此，請確保您的專案路徑中沒有出現非英文字元。 
+關於 python2 中的 Unicode 問題，本文後面也有一個更粗魯但直接的解決方案，您可以參考。
 
 #### 各種美化與調整
 
 雖然能匯出 html 了，不過美觀度讓人不甚滿意，於是進入美化階段……總之請打開 conf.py 檔案。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">提示</span> 並不是所有可用的設定參數，都會老實以註解的型式被預先寫在 conf.py 檔案中。
- 要取得完整的可設定項目清單，還請參看[官網的說明頁面](http://sphinx-doc.org/config.html)。
-</span>
+**提示**
+並不是所有可用的設定參數，都會老實以註解的型式被預先寫在 conf.py 檔案中。
+要取得完整的可設定項目清單，還請參看[官網的說明頁面](http://sphinx-doc.org/config.html)。
+
 
 ##### 介面語言
 
@@ -257,18 +260,20 @@ sphinx 還支援使用者從頭自訂一個 theme，但此處不講，請自行�
 
 然後將 page.html 檔案內容設定為：
 
-<pre>{% extends "!page.html" %}
+```{% extends "!page.html" %}```  
 
-{% set css_files = css_files + ["_static/style.css"] %}</pre>
+```{% set css_files = css_files + ["_static/style.css"] %}```
 
 透過這兩個步驟，您就可以在 style.css 檔案中隨意增添您網頁的 CSS 內容了。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">註釋</span> 這部份資料源自 [Tinkerer 專案](http://tinkerer.me/)的[這一頁](http://tinkerer.me/doc/theming.html)。Tinkerer 是一個用 sphinx 來架靜態 blog 的專案，各位有興趣也可試試。</span>
+**註釋**
+這部份資料源自 [Tinkerer 專案](http://tinkerer.me/)的[這一頁](http://tinkerer.me/doc/theming.html)。Tinkerer 是一個用 sphinx 來架靜態 blog 的專案，各位有興趣也可試試。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">提示</span> 如果想進一步瞭解 page.html 檔案是在搞什麼鬼，或是想繼續深入 sphinx 的 theme 自訂功能，[這一頁](http://sphinx-doc.org/templating.html)值得您參考看看。
-</span>
+**提示**
+如果想進一步瞭解 page.html 檔案是在搞什麼鬼，或是想繼續深入 sphinx 的 theme 自訂功能，[這一頁](http://sphinx-doc.org/templating.html)值得您參考看看。
 
-##### 變更搜尋系統分詞算法
+
+#### 變更搜尋系統分詞算法
 
 sphinx 的 html 輸出會同時包含一個搜尋介面，讓讀者能在整個網站中找資料，不過問題是 sphinx 預設的分詞算法並不適用於中文……嗯，這是個讓人頭疼的老問題了，中文分詞算法一直以來都非常地不好做。
 
@@ -276,12 +281,13 @@ sphinx 的 html 輸出會同時包含一個搜尋介面，讓讀者能在整個�
 
 要這麼做，請額外在 conf.py 中加入一行設定如下：
 
-<pre>html_search_language = 'ja'</pre>
+```html_search_language = 'ja'```
 
 這樣在建立索引時就會套用日文模式了。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">注意！</span> 如果您想要拯救蒼生，請去看 site-packages/sphinx/search 資料夾，裡面端正放著英文索引與日文索引的程式碼。請參考服用。我草草翻了一下，日文分詞用程式碼應該可以透過插換詞庫讓其支援中文，有心人可以試著從此處入手。
-</span>
+**注意！**  
+如果您想要拯救蒼生，請去看 site-packages/sphinx/search 資料夾，裡面端正放著英文索引與日文索引的程式碼。請參考服用。我草草翻了一下，日文分詞用程式碼應該可以透過插換詞庫讓其支援中文，有心人可以試著從此處入手。
+
 
 ### 匯出 PDF
 
@@ -291,55 +297,56 @@ sphinx 生成 PDF 不難，但生成中文 PDF 就非常麻煩，如果要讓這
 
 #### 事前準備
 
-先說預備知識：
+先說預備知識：  
 
-> sphinx 預設是用 LaTeX 來渲染 pdf 的，而 LaTeX 方案很遺憾地引擎不支援 unicode，所以無法渲染中文字元，一碰上中文就報錯，這當然不能用。因此必須改用能支援 unicode 的 XeLaTeX 方案。
+sphinx 預設是用 LaTeX 來渲染 pdf 的，而 LaTeX 方案很遺憾地引擎不支援 unicode，所以無法渲染中文字元，一碰上中文就報錯，這當然不能用。因此必須改用能支援 unicode 的 XeLaTeX 方案。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">提示</span> 其實 sphinx 也支援用 rst2pdf 製作 pdf，就某種意義上來說可能比此處用 XeLaTeX 手續更簡單一點。不過因為 tex 相關資源眾多而我打算西瓜靠大邊，故此處就跳過。</span>
+**提示**
+其實 sphinx 也支援用 rst2pdf 製作 pdf，就某種意義上來說可能比此處用 XeLaTeX 手續更簡單一點。不過因為 tex 相關資源眾多而我打算西瓜靠大邊，故此處就跳過。
 
 有了預備知識，就勇敢開始吧！
 
 在 Fedora 18 下需要以下的包，直接抓來裝：
 
-<pre>sudo yum install texlive-collection-xetex texlive-collection-latexextra</pre>
+```sudo yum install texlive-collection-xetex texlive-collection-latexextra```
 
 依賴包份量超多，有上千個之多，需要空間約為 350 MB。慢慢裝唄……
 
-##### 設定中文相關參數與字型
+#### 設定中文相關參數與字型
 
 本章資料參考[微風夕語網站的一篇文章](http://bone.twbbs.org.tw/blog/2012-03-23-SphinxXeTex.html)。
 
 在 conf.py 檔案中，找到 latex_elements 字典中的 preamble 變數，將其代換為……
 
-<pre>'preamble': r'''
-\usepackage{fontspec}     % 引入 fontsepc，這樣才可以用下面的設定字型的指令
-\setmainfont{AR PL UMing TW}  % 預設字型
-\setsansfont{AR PL UMing TW}  % sans family 字型
-\setromanfont{AR PL UMing TW} % roman 字型
-\setmonofont{AR PL UMing TW}  % 等寬字型
+        'preamble': r'''
+        \usepackage{fontspec}     % 引入 fontsepc，這樣才可以用下面的設定字型的指令
+        \setmainfont{AR PL UMing TW}  % 預設字型
+        \setsansfont{AR PL UMing TW}  % sans family 字型
+        \setromanfont{AR PL UMing TW} % roman 字型
+        \setmonofont{AR PL UMing TW}  % 等寬字型
+        
+        \XeTeXlinebreaklocale "zh"          % 設定斷行演算法為中文
+        \XeTeXlinebreakskip = 0pt plus 1pt  % 設定中文字距與英文字距
+        ''',
 
-\XeTeXlinebreaklocale "zh"          % 設定斷行演算法為中文
-\XeTeXlinebreakskip = 0pt plus 1pt  % 設定中文字距與英文字距
-''',
-</pre>
 
 注意字串前面要加個 "r"，免得將字串中的 \u 解釋成 unicode 碼點。至於上述字型，當然可以調成系統中有的任意字型。不知道系統字型名稱的，可以用 fc-list 指令來抓取（限 Linux 使用）。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">註釋</span> 我估計用 xeCJK 來設定字體可能會更好，不過基於某些不知名原因，我一直無法成功渲染出 PDF，會報錯失敗。
- tex 技術非我所長，歡迎各位有心人嚐試與留言。</span>
+**註釋** 我估計用 xeCJK 來設定字體可能會更好，不過基於某些不知名原因，我一直無法成功渲染出 PDF，會報錯失敗。
+ tex 技術非我所長，歡迎各位有心人嚐試與留言。
 
 另外，參考網站中有提到預設的 inputenc 是衝突套件，不過我測試時沒有發生任何問題，故此處不多費工夫去處理它。
 
-##### 生成 PDF
+#### 生成 PDF
 
 準備了那麼多，那就來具體產生看看吧。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">提示</span> 對於生成 PDF 來說，sphinx 內部只負責產生 .tex 與相關檔案。
+**提示** 對於生成 PDF 來說，sphinx 內部只負責產生 .tex 與相關檔案。
  當 .tex 產生好之後就沒 sphinx 的事了。sphinx 只會去呼叫外部程式 pdflatex，來將 .tex 檔處理成 pdf 檔。
 
-以上是預設工序無誤，但是還請注意，外部程式 pdflatex 不能處理中文。我們得想方設法用 xelatex 將其取代才行。</span>
+以上是預設工序無誤，但是還請注意，外部程式 pdflatex 不能處理中文。我們得想方設法用 xelatex 將其取代才行。
 
-##### 手工生成 PDF
+#### 手工生成 PDF
 
 先說明手工作法：
 
@@ -354,14 +361,14 @@ sphinx 生成 PDF 不難，但生成中文 PDF 就非常麻煩，如果要讓這
 
 要解決這個問題，請打開 conf.py 並尋找 latex_documents 變數。以下是個例子：
 
-<pre>latex_documents = [
-  ('index', 'filename.tex', u'作品名',
-   u'作者名', 'manual'),
-]</pre>
+        latex_documents = [
+          ('index', 'filename.tex', u'作品名',
+           u'作者名', 'manual'),
+        ]
 
 請檢查第二個變數（上例中的 filename.tex），確定它是一個正常的檔名。如此一來就沒問題了。
 
-##### language 與 babel 問題
+#### language 與 babel 問題
 
 如果您有將 conf.py 中 language 的值設為 zh_CN 或 zh_TW，則在 pdf 生成過程中會出現錯誤。關於這個問題，您可以參考[此處](https://bitbucket.org/birkenfeld/sphinx/issue/1119/no-babel-option-known-for-language-zh_cn)的說明。總而言之是 reStructuredText 的 babel 模組還不支援中文所造成的。
 
@@ -369,39 +376,39 @@ sphinx 生成 PDF 不難，但生成中文 PDF 就非常麻煩，如果要讓這
 
 不過繞過的方法還是有的：請在 conf.py 檔案的 latex_elements 中加入額外一行：
 
-<pre>latex_elements = {
-    ...
+        latex_elements = {
+            ...
+        
+            "babel" = "", # 加入這行
+        
+            ...
+        }
 
-    "babel" = "", # 加入這行
-
-    ...
-}
-</pre>
 
 如此一來就能避免 xelatex 啟用 babel 翻譯功能，暫時避開問題。
 
 關於 babel = "" 的設定詳情與理由，可參看[這個網頁](http://sphinx-doc.org/config.html#confval-latex_elements)。
 
-##### python2 下的 Unicode 問題
+#### python2 下的 Unicode 問題
 
 如果您使用 python2 版本的 sphinx，則可能會在生成各種輸出格式的過程中，碰到 Unicode Error，這通常是因為輸出路徑中含有中文字所造成的（但我也遇過其他亂七八糟的原因），總之，此時請到您的 conf.py 檔案中，在 import sys, os 下方加入四行，變成如下這般……
 
-<pre>import sys, os
-# Avoid unicode problem for python2
-if sys.version_info.major == 2:
-    reload(sys)
-    sys.setdefaultencoding('utf8')
-</pre>
+        import sys, os
+        # Avoid unicode problem for python2
+        if sys.version_info.major == 2:
+            reload(sys)
+            sys.setdefaultencoding('utf8')
+
 
 此問題就能被加以躲開。
 
-##### 單步生成 PDF
+#### 單步生成 PDF
 
 解決所有問題，能夠順利產生檔案後，來看看能不能把之前手工產生 PDF 的步驟弄得簡單一點。
 
 想將手工步驟合併進行，可以修改**某個 sphinx 系統檔案**：
 
-<pre>/usr/lib/python2.7/site-packages/sphinx/texinputs/Makefile</pre>
+```/usr/lib/python2.7/site-packages/sphinx/texinputs/Makefile```
 
 我找到的預設位置如上所示，您的位置可能略有差異。
 
@@ -409,20 +416,21 @@ if sys.version_info.major == 2:
 
 回到您的專案目錄下，執行以下一句：
 
-<pre>make latexpdf</pre>
+```make latexpdf```
 
 如此一來，就能一個指令產生 pdf 檔案了。
 
-<span class="inset-left yellowbox" style="width: 650px;"><span class="inset-right-title">註釋</span> 當然，此處修改系統檔來達成自動化未必是個好方案。取而代之，您也可以試著新增一個 shell script 或修改專案資料夾內的 Makefile 檔案來解決問題。
- 比方說將 Makefile 檔案中的 latexpdf 段落改成像下面這樣（留意縮進是 tab 不是空白）：</span>
+**註釋**
+當然，此處修改系統檔來達成自動化未必是個好方案。取而代之，您也可以試著新增一個 shell script 或修改專案資料夾內的 Makefile 檔案來解決問題。
+比方說將 Makefile 檔案中的 latexpdf 段落改成像下面這樣（留意縮進是 tab 不是空白）：
 
-<pre>latexpdf:
-        $(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-        @echo "Running LaTeX files through xelatex..."
-        #$(MAKE) -C $(BUILDDIR)/latex all-pdf
-        cd $(BUILDDIR)/latex ; xelatex *.tex ; xelatex *.tex
-        @echo "xelatex finished; the PDF files are in $(BUILDDIR)/latex."
-</pre>
+        latexpdf:
+                $(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+                @echo "Running LaTeX files through xelatex..."
+                #$(MAKE) -C $(BUILDDIR)/latex all-pdf
+                cd $(BUILDDIR)/latex ; xelatex *.tex ; xelatex *.tex
+                @echo "xelatex finished; the PDF files are in $(BUILDDIR)/latex."
+
 
 #### PDF 的美化與校調
 
@@ -430,19 +438,19 @@ PDF 的自訂比 HTML 的自訂麻煩多了。
 
 您可以先看看 conf.py 檔案中的 latex_documents：
 
-<pre>latex_documents = [
-  ('index', 'filename.tex', u'作品名',
-   u'作者名', 'manual'),
-]
-</pre>
+        latex_documents = [
+          ('index', 'filename.tex', u'作品名',
+           u'作者名', 'manual'),
+        ]
 
+  
 上例中 manual 位置，可以被設為 manual 與 howto 的其中之一。這兩種就是 sphinx 僅有的兩種 pdf 佈局。其中，manual 比較重量級，而 howto 則要輕得多，試試看就知。
 
 除此之外，您還可以在 conf.py 檔案中的 latex_elements 變數中進行字體、字型、紙張規格等設定。
 
 關於可用變數的詳情還請參看[這一頁](http://sphinx-doc.org/config.html#options-for-latex-output)。但不管怎麼說，預設曝露在外可被簡單套用的設定數量實在很有限。如果您打算更進一步地設計您的頁面，請注意以下資料夾：
 
-<pre>/usr/lib/python2.7/site-packages/sphinx/texinputs</pre>
+```/usr/lib/python2.7/site-packages/sphinx/texinputs```
 
 本資料夾有兩個檔案，分別為 sphinxmanual.cls 與 sphinxhowto.cls，此兩檔案正好應對著前述的 manual 佈局與 howto 佈局。您可以修改他們，或者索性依樣畫瓢設計出您自己的佈局。
 
@@ -452,7 +460,7 @@ PDF 的自訂比 HTML 的自訂麻煩多了。
 
 您可以在 conf.py 中加入以下一行來解決問題。
 
-<pre>epub_basename = u'不含副檔名的檔名'</pre>
+```epub_basename = u'不含副檔名的檔名'```
 
 sphinx 官方公開表示 epub 匯出格式目前尚處於實驗階段，因此畫面效果相當欠佳。還有另外提醒一點：epub 固然有許多獨立專屬的設定，不過另一方面，它也有許多資料會直接抓 html 的設定來用。當設定結果不盡如人意時，也該嚐試同時調整 html 的設定才是。
 
