@@ -65,7 +65,7 @@
    * [你的老遊戲總管 D-Fend Reloaded](Game/Game-201104-DFend.md)
    * [TripleA－－硬派的回合制策略遊戲](Game/Game-201311-TripleA.md)
    * [DOSBox Game Launcher－－方便玩 Dos 遊戲的前端介面](Game/Game-20131213-DOSBox.md)
-* Guide
+* [Guide](Guide/README.md)
 * Language
 * Security
 * System
