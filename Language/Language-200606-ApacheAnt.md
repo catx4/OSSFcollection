@@ -60,4 +60,4 @@ Java Opensources for Web Development Part I：嘗試使用來自 Opensource 的�
 當我們擁有了這些任務，就可以很快地製作出我們的專案。最重要的，我們更可以利用 ant 來協助我們連續式開發的方式。另外，大多的 java opensource 隨著原始碼都會附加 build.xml 讓使用者去 compile 出相關的系統， 所以學習 java opensource 的人不能不認識 ant 的操作。
 
 1.註：http://www.martinfowler.com/articles/continuousIntegration.html  
-2.相關網址：[Lession 1 : 我該如何存取一個設定檔](Language/Language-200605-Javatools.md)
+2.相關網址：[Lession 1 : 我該如何存取一個設定檔](http://catx4.gitbooks.io/ossf_epaper_collection/content/Language/Language-200605-Javatools.html)
