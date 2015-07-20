@@ -72,6 +72,7 @@
    * [自由軟體轉換心得（一）：Ubuntu 11.04 在圖形介面下的基礎操作](Guide/Guide-201203-Ubuntu1.md)
 * [Language](Language/README.md)
    * [Java Opensources for Web Development Part I：嘗試使用來自 Opensource 的小工具(1)](Language/Language-200605-Javatools.md)
+   * [跨越 IDE 的 Apache Ant](Language/Language-200606-ApacheAnt.md)
 * System
 * Testing
 * Tool
