@@ -170,13 +170,13 @@ Mac OS X Install CD >> 選擇安裝，若無 CD 者到 [http://developer.apple.c
 
      gem install delayed_job
 
-> gem install hoptoad_notifier
+     gem install hoptoad_notifier
 
-> gem install facebooker2
+     gem install facebooker2
 
-> gem install factory_girl
+     gem install factory_girl
 
-> gem install sphinx
+     gem install sphinx
 
 以上即完成了 Mac OS X 下的開發環境。
 
@@ -192,7 +192,7 @@ Mac OS X Install CD >> 選擇安裝，若無 CD 者到 [http://developer.apple.c
 
 開啟「文字命令」模式輸入
 
-C:/> gem install rails –include-dependencies
+    C:/> gem install rails –include-dependencies
 
 請記得保持網路暢通，此動作將透過網路下載相關的檔案來安裝。
 
@@ -211,21 +211,21 @@ Ruby on Rails 開發所使用的編輯器有很多種，其中最簡便的就是
 
 檢視 Ruby 的版本：
 
-$ ruby -v
+    $ ruby -v
 
 ruby 1.8.7 (2011-02-18 patchlevel 334) [i686-linux], MBARI 0x8770, Ruby Enterprise Edition 2011.03
 
 檢視 Rails 的版本：
 
-$ rails -v
+    $ rails -v
 
-Rails 3.0.7
+    Rails 3.0.7
 
 檢視 rake 版本：（此 V 為大寫）
 
-$ rake -V
+    $ rake -V
 
-rake, version 0.8.7
+    rake, version 0.8.7
 
 若以上的指令能顯示版本資訊，表示您可以用 Ruby on Rails 進行開發了。
 
@@ -234,7 +234,7 @@ rake, version 0.8.7
 建立一個新成立的網站，我們必須要當它為一個專案來進行開發，所以請在您欲指定的家目錄下新開一個專案，
 
 請下這個指令：
-
+```
 $ rails new demo
 
 create
@@ -286,12 +286,12 @@ $ rails s
 [2011-07-21 14:14:09] INFO ruby 1.8.7 (2011-02-18) [i686-linux]
 
 [2011-07-21 14:14:09] INFO WEBrick::HTTPServer#start: pid=2967 port=3000
-
+```
 然後打開 Web browser 在網址輸入
 
-http://localhost:3000[
+`http://localhost:3000`
 
-](http://localhost:3000)看到以下的畫面，表示您完成初探 Ruby on Rails 的第一步了！
+看到以下的畫面，表示您完成初探 Ruby on Rails 的第一步了！
 
 [![http://www.openfoundry.org/images/110809/ruby_on_rails.png](http://www.openfoundry.org/images/110809/ruby_on_rails.png)](http://www.openfoundry.org/images/110809/ruby_on_rails.png)
 
