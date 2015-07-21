@@ -74,6 +74,7 @@
    * [Java Opensources for Web Development Part I：嘗試使用來自 Opensource 的小工具(1)](Language/Language-200605-Javatools.md)
    * [跨越 IDE 的 Apache Ant](Language/Language-200606-ApacheAnt.md)
    * [麥克阿忠的 Ruby on Rails 初探](Language/Language-201108-RoR.md)
+   * [麥克阿忠的 Ruby on Rails 特快車－Scaffold 篇](Language/Language-201109-Scaffold.md)
 * System
 * Testing
 * Tool
