@@ -441,10 +441,10 @@ Pbook.find 的用法是 Pbook.find(13)，因此要接受從網址而來的參數
 
 最後為讀者整理手刻 CRUD 的一些重點步驟。
 
-1.  建立資料庫相關的連結設定：config/database.yml，如要指定其它資料庫，就在建立新專案時加上 -d SqlServerName
-2.  建立操作資料表相關的 model：$rails g model table columnA:string columnB:integer birthday:date
-3.  設定相關路由：config/routes.rb 可先在建立 conroller 的過程中修改 routes.rb，注意改完之後要重啟 server。
-4.  建立 controller 的 def action 跟 views 裡的 _*_.html.erb 相對應的網頁或表單。
+1.  建立資料庫相關的連結設定：`config/database.yml`，如要指定其它資料庫，就在建立新專案時加上 `-d SqlServerName`
+2.  建立操作資料表相關的 model：`$rails g model table columnA:string columnB:integer birthday:date`
+3.  設定相關路由：`config/routes.rb` 可先在建立 conroller 的過程中修改 `routes.rb`，注意改完之後要重啟 server。
+4.  建立 `controller` 的 `def action` 跟 `views` 裡的 `_*_.html.erb` 相對應的網頁或表單。
 
 完成以上的範例後您的 Ruby on Rails 的功力即提升五成以上，敬請期待下篇剖析 Rails MVC 概念的文章。
 
