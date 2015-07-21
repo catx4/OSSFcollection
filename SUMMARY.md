@@ -75,6 +75,7 @@
    * [跨越 IDE 的 Apache Ant](Language/Language-200606-ApacheAnt.md)
    * [麥克阿忠的 Ruby on Rails 初探](Language/Language-201108-RoR.md)
    * [麥克阿忠的 Ruby on Rails 特快車－Scaffold 篇](Language/Language-201109-Scaffold.md)
+   * [麥克阿忠的 Ruby on Rails 真功夫─手刻 CRUD](Language/Language-201110-RubyCRUD.md)
 * System
 * Testing
 * Tool
