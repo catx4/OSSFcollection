@@ -79,6 +79,7 @@
    * [麥克阿忠的 Ruby on Rails 實務─熟悉 MVC](Language/Language-201111-MVC.md)
    * [Perlbrew - perl installation management tool](Language/Language-201111-Perlbrew.md)
    * [phpfarm - install multiple versions of PHP beside each other](Language/Language-201111-phpfarm.md)
+   * [RVM - Ruby enVironment (Version) Manager](Language/Language-201111-RVM.md)
 * System
 * Testing
 * Tool
