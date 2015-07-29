@@ -81,6 +81,7 @@
    * [phpfarm - install multiple versions of PHP beside each other](Language/Language-201111-phpfarm.md)
    * [RVM - Ruby enVironment (Version) Manager](Language/Language-201111-RVM.md)
    * [Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew](Language/Language-201111-Virtualenv.md)
+   * [以 DotCloud 部署 Perl Web App](Language/Language-201112-DotCloud.md)
 * System
 * Testing
 * Tool
