@@ -83,6 +83,7 @@
    * [Python 的虛擬環境及多版本開發利器─Virtualenv 與 Pythonbrew](Language/Language-201111-Virtualenv.md)
    * [以 DotCloud 部署 Perl Web App](Language/Language-201112-DotCloud.md)
    * [Perl CPAN - Comprehensive Perl Archive Network](Language/Language-201112-PerlCPAN.md)
+   * [Python 套件管理程式簡介](Language/Language-201112-Python.md)
 * System
 * Testing
 * Tool
