@@ -85,6 +85,7 @@
    * [Perl CPAN - Comprehensive Perl Archive Network](Language/Language-201112-PerlCPAN.md)
    * [Python 套件管理程式簡介](Language/Language-201112-Python.md)
    * [RubyGems─管理你的紅寶石](Language/Language-201112-RubyGems.md)
+   * [初探 RequireJS](Language/Language-201204-RequireJS.md)
 * System
 * Testing
 * Tool
