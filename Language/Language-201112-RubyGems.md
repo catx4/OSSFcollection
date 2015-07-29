@@ -3,7 +3,8 @@
 
 ### 前言
 
-![RubyGems Logo](http://www.openfoundry.org/images/111213/gems/rubygems_logo.jpg "RubyGems Logo")[RubyGems](https://rubygems.org) 是 Ruby 社群最常使用的套件管理系統，如同 Perl 的 CPAN 或 Python 的 EasyInstall / pip，使用者可以很簡易地安裝及管理套件。與其它的套件管理系統一樣，RubyGems 也有版本與相依性管理。
+![RubyGems Logo](http://www.openfoundry.org/images/111213/gems/rubygems_logo.jpg)  
+[RubyGems](https://rubygems.org) 是 Ruby 社群最常使用的套件管理系統，如同 Perl 的 CPAN 或 Python 的 EasyInstall / pip，使用者可以很簡易地安裝及管理套件。與其它的套件管理系統一樣，RubyGems 也有版本與相依性管理。
 
 RubyGems 大致可以分為兩個部份。一個是 gem 命令，另一個則是在 runtime 中管理可用的 gems 與其版本。在這篇淺談中，將不會介紹所有的功能與選項，使用者請自行參閱 `gem help`。
 
