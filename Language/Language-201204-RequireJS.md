@@ -161,45 +161,23 @@ js/main.js
 
 js/main.js
 
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre>
-
- | 
-
-<pre>require({
-  paths: {
-    "order": "../lib/requirejs/order",
-    "lib": "../lib"
-  }
-});
-
-require([
-  'app',
-  'order!lib/jquery/jquery-min',
-  'order!lib/underscore/underscore-min',
-  'order!lib/backbone/backbone-min'
-], function (App) {
-  App.initialize();
-});
-</pre>
-
- |
+```
+1 require({
+2   paths: {
+3     "order": "../lib/requirejs/order",
+4     "lib": "../lib"
+5   }
+6 });
+7 
+8 require([
+9   'app',
+10   'order!lib/jquery/jquery-min',
+11   'order!lib/underscore/underscore-min',
+12   'order!lib/backbone/backbone-min'
+13 ], function (App) {
+14   App.initialize();
+15 });
+```
 
 要特別注意的是，這裡設定的別名，也會影響到其他模組裡所使用的 `define` API 。
 
@@ -210,38 +188,19 @@ require([
 前面提到 `require` API 可以讓我們對載入的 js 檔案所回傳的模組物件做 namespace 對應，也就是上述例子的 `App` 。事實上我們可以針對每個模組都設定一個 namespace ，例如：
 
 js/main.js
-
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre>
-
- | 
-
-<pre>require([
-  '../lib/a',
-  '../lib/b',
-  '../lib/c',
-  '../lib/d'
-], function (moduleA, moduleB, moduleC) {
-  moduleA.doSomething();
-  moduleB.doSomething();
-  moduleC.doSomething();
-  namespaceD.doSomething();
-});
-</pre>
-
- |
+```
+1 require([
+2   '../lib/a',
+3   '../lib/b',
+4   '../lib/c',
+5   '../lib/d'
+6 ], function (moduleA, moduleB, moduleC) {
+7   moduleA.doSomething();
+8   moduleB.doSomething();
+9   moduleC.doSomething();
+10   namespaceD.doSomething();
+11 });
+```
 
 可以看到 `'../lib/a'` 這個模組對應到 `moduleA` 這個 namespace ，`'../lib/b'` 則對應到 `moduleB` ，以此類推。
 
@@ -255,67 +214,33 @@ js/main.js
 
 lib/d.js
 
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-8
-</pre>
-
- | 
-
-<pre>define(function () {
-  var namespaceD = window.namespaceD = {
-    doSomething: function () {
-      console.log('namespaceD.doSomething()');
-    }
-  };
-  return namespaceD;
-});
-</pre>
-
- |
+```
+1 define(function () {
+2  var namespaceD = window.namespaceD = {
+3     doSomething: function () {
+4       console.log('namespaceD.doSomething()');
+5     }
+6   };
+7   return namespaceD;
+8 });
+```
 
 瞭解這個回到我們前面所提到的 Backbone.js 範例，有些文章的例子會教大家這麼用：
 
 js/main.js
-
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre>
-
- | 
-
-<pre>require([
-  'order!lib/jquery/jquery-min',
-  'order!lib/underscore/underscore-min',
-  'order!lib/backbone/backbone-min',
-  'order!app'
-], function ($, _, Backbone, App) {
-  console.log($);
-  console.log(_);
-  console.log(Backbone);
-  console.log(App);
-});
-</pre>
-
- |
+```
+1 require([
+2   'order!lib/jquery/jquery-min',
+3   'order!lib/underscore/underscore-min',
+4   'order!lib/backbone/backbone-min',
+5   'order!app'
+6 ], function ($, _, Backbone, App) {
+7   console.log($);
+8   console.log(_);
+9   console.log(Backbone);
+10   console.log(App);
+11 });
+```
 
 如果各位是使用 Underscore.js 及 Backbone.js 的官方版本時，這樣做是錯誤的，你會發現 `callback` 裡的 `_`, `Backbone` 都會是 null 值。為什麼呢？主要是因為這兩個套件目前不支援 AMD 架構，所以無法正確回傳對應的 Underscore.js 及 Backbone.js 物件回來。所以很多人在透過 RequireJS 使用這兩個套件時，就會在這裡卡關。
 
@@ -326,27 +251,13 @@ js/main.js
 還有一種方法是為這些套件的官方版本定義一個 `wrapper` ，以 Underscore.js 為例：
 
 lib/underscore/wrapper.js
-
-| 
-
-<pre>1
-2
-3
-4
-5
-</pre>
-
- | 
-
-<pre>define([
-  'lib/underscore/underscore-min'
-], function(){
-  return _.noConflict();
-});
-</pre>
-
- |
-
+```
+1define([
+2  'lib/underscore/underscore-min'
+3], function(){
+4  return _.noConflict();
+5});
+```
 這樣在 `js/main.js` 裡就可以重新使用 Underscore.js 的 namespace 了，例如：
 
 js/main.js
