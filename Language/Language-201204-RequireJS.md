@@ -103,95 +103,53 @@ js/main.js
 
 js/app.js
 
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-</pre>
-
- | 
-
-<pre>define(function () {
-  return {
-    initialize: function () {
-      console.log($);
-    }
-  }
-});
-</pre>
-
- |
+```
+1 define(function () {
+2   return {
+3     initialize: function () {
+4       console.log($);
+5     }
+6   }
+7 });
+```
 
 `js/app.js` 會回傳一個包含 `initialize` 方法的物件模組，而這個方法就是我們前面的 `callback` 。注意這個例子裡並沒有設定模組的 `id` 。
 
 接下來我們把 `js/app.js` 加到 `require` 的第一個參數中，特別注意這裡的 `app` 是指 `js/app.js` ，而不是模組名稱。
 
 js/main.js
+```
+1 require([
+2   'app',
+3   '../lib/jquery/jquery-min'
+4 ], function (App) {
+5   App.initialize();
+6 });
 
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-</pre>
-
- | 
-
-<pre>require([
-  'app',
-  '../lib/jquery/jquery-min'
-], function (App) {
-  App.initialize();
-});
-</pre>
-
- |
+```
 
 在 `callback` 的第一個參數 `App` 會對應到 `js/app.js` 中所回傳的物件，這意謂著我們可以為該物件指定新的 namespace 。
 
 到這裡其實可以應付很多基本的應用了，不過如果當 library 間有相依性問題時，這樣的寫法就可能會出錯了。
 
-## 順序問題
+### 順序問題
 
 因為使用非同步的載入方式，所以用 `require` 載入套件時，是有可能會造成相依性上的問題。 所幸 RequireJS 提供了一個 `order` plugin ，讓我們可以依序載入正確的套件。
 
 以 Backbone 為例，我們需要依序載入 jQuery 、 underscore 及 Backbone 等三個套件，方法如下：
 
 js/main.js
+```
+1 require([
+2   'app',
+3   '../lib/requirejs/order!../lib/jquery/jquery-min',
+4   '../lib/requirejs/order!../lib/underscore/underscore-min',
+5   '../lib/requirejs/order!../lib/backbone/backbone-min'
+6 ], function (App) {
+7   App.initialize();
+8 });
+```
 
-| 
-
-<pre>1
-2
-3
-4
-5
-6
-7
-8
-</pre>
-
- | 
-
-<pre>require([
-  'app',
-  '../lib/requirejs/order!../lib/jquery/jquery-min',
-  '../lib/requirejs/order!../lib/underscore/underscore-min',
-  '../lib/requirejs/order!../lib/backbone/backbone-min'
-], function (App) {
-  App.initialize();
-});
-</pre>
-
- |
 
 如上面的範例所示，在每一行載入 js 的字串中，我們先載入 plugin ，然後利用 `!` 符號來將 library 的位置傳給 plugin 。
 
@@ -393,29 +351,20 @@ lib/underscore/wrapper.js
 
 js/main.js
 
-| 
 
-<pre>1
-2
-3
-4
-5
-</pre>
+```
+1 require([
+2   'order!lib/underscore/wrapper'
+3 ], function (_) {
+4   console.log(_);
+5 })
+```
 
- | 
-
-<pre>require([
-  'order!lib/underscore/wrapper'
-], function (_) {
-  console.log(_);
-})
-</pre>
-
- |
+ 
 
 不過因為非同步載入的關係，要使用 `wrapper` 方法處理套件相依性時，其流程就稍微複雜些了，大家可以參考 [Organizing your application using Modules (require.js)](http://backbonetutorials.com/organizing-backbone-using-modules/) 一文的介紹。
 
-## 編譯
+### 編譯
 
 當我們把 JavaScript 拆成這麼多模組檔案後，那麼不就會讓 HTTP Request 變多了嗎？有沒有什麼方法可以幫我們把這些檔案再組合成為一支檔案呢？
 
@@ -451,28 +400,22 @@ r.js -o name=js/main out=js/main-built.js baseUrl=. paths.order="lib/requirejs/o
 
 index.html
 
-| 
-
-<pre>1
-</pre>
-
- | 
 
 ```
 ＜script data-main="js/main-built" src="lib/requirejs/require.js"＞＜/script＞
 ```
 
- |
+ 
 
 當然聰明如你，應該想到該怎麼讓開發和上線環境使用不同的 JavaScript 檔案了吧？
 
-## 心得
+### 心得
 
 以往在寫 JavaScript 時，雖然都會儘可能模組化，但變數的管理還有程式拆解不易的狀況，都是自己在維護 JavaScript 程式時很大的痛處。
 
 在瞭解 RequireJS 的強大後，我相信以這樣的模組化方式再搭配 Backbone.js 的架構，一定可以讓系統在開發與維護上更為有組織性。
 
-## 參考
+### 參考
 
 *   [Organizing your application using Modules (require.js)](http://backbonetutorials.com/organizing-backbone-using-modules/)
 *   [AMD 規範：簡單而優雅的動態載入 JavaScript 代碼](http://blog.csdn.net/dojotoolkit/article/details/6076668)
