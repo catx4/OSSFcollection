@@ -235,6 +235,6 @@ Cookie Secure Flag 設定：
  網駭科技技術顧問，資安團隊 NISRA 創辦人，多年網路管理、資訊安全、駭客攻防技術經驗，自覺什麼都沒有，只有滿腔熱血。
 
 * [Mail](http://%20%3Cscript%20language=%27JavaScript%27%20type=%27text/javascript%27%3E%20%3C%21--%20var%20prefix%20=%20%27mailto:%27;%20var%20suffix%20=%20%27%27;%20var%20attribs%20=%20%27%27;%20var%20path%20=%20%27hr%27%20+%20%27ef%27%20+%20%27=%27;%20var%20addy60201%20=%20%27allenown%27%20+%20%27@%27;%20addy60201%20=%20addy60201%20+%20%27gmail%27%20+%20%27.%27%20+%20%27com%27;%20document.write%28%20%27%3Ca%20%27%20+%20path%20+%20%27%5C%27%27%20+%20prefix%20+%20addy60201%20+%20suffix%20+%20%27%5C%27%27%20+%20attribs%20+%20%27%3E%27%20%29;%20document.write%28%20addy60201%20%29;%20document.write%28%20%27%3C%5C/a%3E%27%20%29;%20//--%3E%20%3C/script%3E%20%3Cscript%20language=%27JavaScript%27%20type=%27text/javascript%27%3E%20%3C%21--%20document.write%28%20%27%3Cspan%20style=%5C%27display:%20none;%5C%27%3E%27%20%29;%20//--%3E%20%3C/script%3E%E9%80%99%E5%80%8B%20E-mail%20%E5%9C%B0%E5%9D%80%E5%B7%B2%E7%B6%93%E8%A2%AB%E9%98%B2%E6%AD%A2%E7%81%8C%E6%B0%B4%E6%83%A1%E6%84%8F%E7%A8%8B%E5%BC%8F%E4%BF%9D%E8%AD%B7%EF%BC%8C%E6%82%A8%E9%9C%80%E8%A6%81%E5%95%9F%E7%94%A8%20Java%20Script%20%E6%89%8D%E8%83%BD%E8%A7%80%E7%9C%8B%20%3Cscript%20language=%27JavaScript%27%20type=%27text/javascript%27%3E%20%3C%21--%20document.write%28%20%27%3C/%27%20%29;%20document.write%28%20%27span%3E%27%20%29;%20//--%3E%20%3C/script%3E)
- * [Blog](http://allenown.blogspot.com)
- * [Twitter](http://twitter.com/allenown)
- * [Plurk](http://www.plurk.com/allenown)
+* [Blog](http://allenown.blogspot.com)
+* [Twitter](http://twitter.com/allenown)
+* [Plurk](http://www.plurk.com/allenown)
