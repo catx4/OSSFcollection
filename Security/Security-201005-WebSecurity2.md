@@ -117,7 +117,7 @@ $str = “SELECT * FROM Users WHERE Username='' or ''='' and Password= '' or ‘
 
 已登入網站應用程式的合法使用者執行到惡意的 HTTP 指令，但網站卻當成合法需求處理，使得惡意指令被正常執行。
 
-舉例來說，攻擊者在網站內放置了 ![](http://www.openfoundry.org/%E2%80%9Dhttp:/server.com/send.asp?to=...%E2%80%9D)，受害者讀取到此頁面之後，就會去 server.com 主機執行 send.asp 惡意行為。
+舉例來說，攻擊者在網站內放置了```<img src="http:/server.com/send.asp?to=xxx" border="0" /> ```，受害者讀取到此頁面之後，就會去 server.com 主機執行 send.asp 惡意行為。
 
 例如 Web 2.0 時代的社交網站等等，都是 CSRF 攻擊的天堂。
 
